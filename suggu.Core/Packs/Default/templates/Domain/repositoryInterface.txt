@@ -1,0 +1,7 @@
+using {Name} = {SourceNamespace}.{Name};
+
+namespace {Namespace};
+
+public interface I{Name}Repository : IRepository<{Name}>
+{
+}

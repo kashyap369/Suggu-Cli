@@ -1,0 +1,7 @@
+using {RootNamespace}.Common;
+
+namespace {Namespace};
+
+public class {Name} : AuditableEntity
+{
+}

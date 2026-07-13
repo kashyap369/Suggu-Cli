@@ -1,0 +1,5 @@
+namespace {Namespace};
+
+internal class Result
+{
+}

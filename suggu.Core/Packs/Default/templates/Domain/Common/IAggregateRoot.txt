@@ -1,0 +1,6 @@
+namespace {Namespace};
+
+/// <summary>Marker for aggregate roots — the only entities repositories are allowed to load and save.</summary>
+public interface IAggregateRoot
+{
+}

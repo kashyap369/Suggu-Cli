@@ -1,0 +1,2578 @@
+{
+  "sha": "61652b193a7bfd38da80903773b80942f01a071b",
+  "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/61652b193a7bfd38da80903773b80942f01a071b",
+  "tree": [
+    {
+      "path": ".gitattributes",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ff0c423042b46cb1d617b81efb715defbe8054d",
+      "size": 2518,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/1ff0c423042b46cb1d617b81efb715defbe8054d"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9491a2fda28342ab358eaf234e1afe0c07a53d62",
+      "size": 6223,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/9491a2fda28342ab358eaf234e1afe0c07a53d62"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e400a59bafebbb402182c1873bf846d1494bb5d5",
+      "size": 6250,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/e400a59bafebbb402182c1873bf846d1494bb5d5"
+    },
+    {
+      "path": "TaskFlow.Api",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2e559d7d763744c4164a8fd0d56ae52159a021c0",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/2e559d7d763744c4164a8fd0d56ae52159a021c0"
+    },
+    {
+      "path": "TaskFlow.Api/Controllers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8739dcd6846827e78136f02021730042d5b18140",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/8739dcd6846827e78136f02021730042d5b18140"
+    },
+    {
+      "path": "TaskFlow.Api/Controllers/Identity",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2edbfd8d85a41e48a1e9cd2a1cd36418cbb6ff2e",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/2edbfd8d85a41e48a1e9cd2a1cd36418cbb6ff2e"
+    },
+    {
+      "path": "TaskFlow.Api/Controllers/Identity/AuthController.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0aa7f9cf2f40da8f96849c7d9edf8f8f55e8f026",
+      "size": 1451,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/0aa7f9cf2f40da8f96849c7d9edf8f8f55e8f026"
+    },
+    {
+      "path": "TaskFlow.Api/Controllers/Organization",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "59751c4f17da36893faec5210f4a620b6c7a78d4",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/59751c4f17da36893faec5210f4a620b6c7a78d4"
+    },
+    {
+      "path": "TaskFlow.Api/Controllers/Organization/OrganizationController.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4856ebec40ddace49b8e1ff9c97501700687f23d",
+      "size": 1750,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/4856ebec40ddace49b8e1ff9c97501700687f23d"
+    },
+    {
+      "path": "TaskFlow.Api/Controllers/Organization/OrganizationInvitationController.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d3bdc04bacf9f48ec2ad1417c427cb3e27cdee6",
+      "size": 2289,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/2d3bdc04bacf9f48ec2ad1417c427cb3e27cdee6"
+    },
+    {
+      "path": "TaskFlow.Api/Controllers/Organization/OrganizationMemberController.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "79d84eb32e089b4b1ca46e846e11b3bbe94ea0e7",
+      "size": 2040,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/79d84eb32e089b4b1ca46e846e11b3bbe94ea0e7"
+    },
+    {
+      "path": "TaskFlow.Api/Controllers/Organization/OrganizationRoleController.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f52844f9ace2fc0fb3d728eaeedc5d5aefb74c8",
+      "size": 1623,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/7f52844f9ace2fc0fb3d728eaeedc5d5aefb74c8"
+    },
+    {
+      "path": "TaskFlow.Api/Controllers/WeatherForecastController.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78bd3ef24d80b9b8ceb1d93ddfa55735b96c97e1",
+      "size": 806,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/78bd3ef24d80b9b8ceb1d93ddfa55735b96c97e1"
+    },
+    {
+      "path": "TaskFlow.Api/Controllers/WorkManagement",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2c48084dfa035928386926e80d93a20b2db69e34",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/2c48084dfa035928386926e80d93a20b2db69e34"
+    },
+    {
+      "path": "TaskFlow.Api/Controllers/WorkManagement/ProjectController.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f7072b1c2708fb6856c61e29a73189864a1460d0",
+      "size": 1627,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/f7072b1c2708fb6856c61e29a73189864a1460d0"
+    },
+    {
+      "path": "TaskFlow.Api/Controllers/WorkManagement/SubTaskController.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b6741e8d68c8e4c011b2d2b14c273bde1ccce18d",
+      "size": 2476,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/b6741e8d68c8e4c011b2d2b14c273bde1ccce18d"
+    },
+    {
+      "path": "TaskFlow.Api/Controllers/WorkManagement/TaskController.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a7438dd6f9ee6a675cf5f231da2dd9af499be23",
+      "size": 2372,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/2a7438dd6f9ee6a675cf5f231da2dd9af499be23"
+    },
+    {
+      "path": "TaskFlow.Api/Extensions",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3d774b0851bc1527c633dfa332a10fdd608653c8",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/3d774b0851bc1527c633dfa332a10fdd608653c8"
+    },
+    {
+      "path": "TaskFlow.Api/Extensions/ApplicationBuilderExtensions.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "43b53379d62849895dff1efd781cd2c5ed3b6ee4",
+      "size": 529,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/43b53379d62849895dff1efd781cd2c5ed3b6ee4"
+    },
+    {
+      "path": "TaskFlow.Api/Middlewares",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "61570719b52f016f1e6ea092175b70c0cc7a0b71",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/61570719b52f016f1e6ea092175b70c0cc7a0b71"
+    },
+    {
+      "path": "TaskFlow.Api/Middlewares/ExceptionHandlingMiddleware.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e2e5777a8bea51ad985bb1efab7adbf881069db2",
+      "size": 3946,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/e2e5777a8bea51ad985bb1efab7adbf881069db2"
+    },
+    {
+      "path": "TaskFlow.Api/Middlewares/RequestLoggingMiddleware.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d1cbfb818d11ae08fdeed370a8cb3df5a93932b",
+      "size": 1591,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/9d1cbfb818d11ae08fdeed370a8cb3df5a93932b"
+    },
+    {
+      "path": "TaskFlow.Api/Models",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bf85311e41e619568f97abe932c0ecfc0cb9dd1b",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/bf85311e41e619568f97abe932c0ecfc0cb9dd1b"
+    },
+    {
+      "path": "TaskFlow.Api/Models/Enums",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fb85859f461802127a6cf505fe02f3470c1fbadc",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/fb85859f461802127a6cf505fe02f3470c1fbadc"
+    },
+    {
+      "path": "TaskFlow.Api/Models/Enums/FailureReason.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41339d77937af55a639b3b970eec8c59e908226b",
+      "size": 276,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/41339d77937af55a639b3b970eec8c59e908226b"
+    },
+    {
+      "path": "TaskFlow.Api/Models/Responses",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0e5dc2f8fcae59a710b5331e61f95687bd3de9d1",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/0e5dc2f8fcae59a710b5331e61f95687bd3de9d1"
+    },
+    {
+      "path": "TaskFlow.Api/Models/Responses/ApiErrorResponse.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c2d94216a7fc7cc2cde85a1321b71d427a9d458e",
+      "size": 489,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/c2d94216a7fc7cc2cde85a1321b71d427a9d458e"
+    },
+    {
+      "path": "TaskFlow.Api/Models/Responses/ApiResponse.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e06d954b0cd06732929039874c1b141698dcf5bb",
+      "size": 316,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/e06d954b0cd06732929039874c1b141698dcf5bb"
+    },
+    {
+      "path": "TaskFlow.Api/Program.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78aefd3ca55d2877af15c66b80b25450b31eb677",
+      "size": 1178,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/78aefd3ca55d2877af15c66b80b25450b31eb677"
+    },
+    {
+      "path": "TaskFlow.Api/Properties",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5781db8a16b0549d2b479a2ef8b4bc9ea62f9081",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/5781db8a16b0549d2b479a2ef8b4bc9ea62f9081"
+    },
+    {
+      "path": "TaskFlow.Api/Properties/launchSettings.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d948b2b4afe37708dea66071ca9aeccb48c8b48",
+      "size": 621,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/8d948b2b4afe37708dea66071ca9aeccb48c8b48"
+    },
+    {
+      "path": "TaskFlow.Api/TaskFlow.Api.csproj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5bf9b9a7dbeabad3713c7e639ebece1ef3417f1f",
+      "size": 1169,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/5bf9b9a7dbeabad3713c7e639ebece1ef3417f1f"
+    },
+    {
+      "path": "TaskFlow.Api/TaskFlow.Api.http",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "67a7089ffdd18823c324b62de814b16f25ba6b32",
+      "size": 131,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/67a7089ffdd18823c324b62de814b16f25ba6b32"
+    },
+    {
+      "path": "TaskFlow.Api/WeatherForecast.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7bb8d5d790d1199c8ad818cce46b6cd317ed140b",
+      "size": 279,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/7bb8d5d790d1199c8ad818cce46b6cd317ed140b"
+    },
+    {
+      "path": "TaskFlow.Api/appsettings.Development.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c208ae9181e5e5717e47ec1bd59368aebc6066e",
+      "size": 119,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/0c208ae9181e5e5717e47ec1bd59368aebc6066e"
+    },
+    {
+      "path": "TaskFlow.Api/appsettings.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "528dc97660ebc1100cf305bcd705036b83319cd9",
+      "size": 748,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/528dc97660ebc1100cf305bcd705036b83319cd9"
+    },
+    {
+      "path": "TaskFlow.Application",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "95b3dc21b8d27ef052e1092dc602fbd0c6da49da",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/95b3dc21b8d27ef052e1092dc602fbd0c6da49da"
+    },
+    {
+      "path": "TaskFlow.Application/Behavior",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3bece24fee51aa37d74c5b3095a05fa6fc26225a",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/3bece24fee51aa37d74c5b3095a05fa6fc26225a"
+    },
+    {
+      "path": "TaskFlow.Application/Behavior/ValidationBehavior.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48aab47f5de8dbcc392793c50f5e80d8b64adbe2",
+      "size": 1453,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/48aab47f5de8dbcc392793c50f5e80d8b64adbe2"
+    },
+    {
+      "path": "TaskFlow.Application/Contracts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6a3f2a5761880f053f9a393fa45783f07197fec0",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/6a3f2a5761880f053f9a393fa45783f07197fec0"
+    },
+    {
+      "path": "TaskFlow.Application/Contracts/Email",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "98ef42154bbe7b81b70b43865b888e4af379750f",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/98ef42154bbe7b81b70b43865b888e4af379750f"
+    },
+    {
+      "path": "TaskFlow.Application/Contracts/Email/IEmailService.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c311b9eb6b6ef27484c25cf59b716fd3dea28af2",
+      "size": 260,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/c311b9eb6b6ef27484c25cf59b716fd3dea28af2"
+    },
+    {
+      "path": "TaskFlow.Application/Contracts/Security",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2c6a6799d45f350d184ef84f0a5ccab27c48864d",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/2c6a6799d45f350d184ef84f0a5ccab27c48864d"
+    },
+    {
+      "path": "TaskFlow.Application/Contracts/Security/IJwtProviderr.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c62cb8e5b244bd86031a4357336711b4a41bd970",
+      "size": 226,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/c62cb8e5b244bd86031a4357336711b4a41bd970"
+    },
+    {
+      "path": "TaskFlow.Application/Contracts/Security/IPasswordHasher.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d3024abd4e6eed57e4506f478e070ea30d88860e",
+      "size": 271,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/d3024abd4e6eed57e4506f478e070ea30d88860e"
+    },
+    {
+      "path": "TaskFlow.Application/DependencyInjection",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "499f992d5e744957e7cccc62751eed61c4a4e8a2",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/499f992d5e744957e7cccc62751eed61c4a4e8a2"
+    },
+    {
+      "path": "TaskFlow.Application/DependencyInjection/DependencyRegistration.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86519f38e70c3341d9f0b74dfe1392d1b448cac7",
+      "size": 813,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/86519f38e70c3341d9f0b74dfe1392d1b448cac7"
+    },
+    {
+      "path": "TaskFlow.Application/DomainEvents",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b579e076f3d75188d82ccaae64cdfe8afad2cc10",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/b579e076f3d75188d82ccaae64cdfe8afad2cc10"
+    },
+    {
+      "path": "TaskFlow.Application/DomainEvents/IDomainEventHandler.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "afe40c12d50e6bb666ffa7acf03d77e6d70f24a1",
+      "size": 347,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/afe40c12d50e6bb666ffa7acf03d77e6d70f24a1"
+    },
+    {
+      "path": "TaskFlow.Application/DomainEvents/Identity",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "836d25439721467077f1c70f8606509b71b57632",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/836d25439721467077f1c70f8606509b71b57632"
+    },
+    {
+      "path": "TaskFlow.Application/DomainEvents/Identity/User",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "eb8ec402dc4556f906790e296e340932ec138516",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/eb8ec402dc4556f906790e296e340932ec138516"
+    },
+    {
+      "path": "TaskFlow.Application/DomainEvents/Identity/User/UserRegisteredEventHandler.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b3d1a0b9262437ab28ec9f2cbe2f270a6a0f2fef",
+      "size": 1596,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/b3d1a0b9262437ab28ec9f2cbe2f270a6a0f2fef"
+    },
+    {
+      "path": "TaskFlow.Application/Exceptions",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "115c1edf1ac751453225dd236301577acd181db1",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/115c1edf1ac751453225dd236301577acd181db1"
+    },
+    {
+      "path": "TaskFlow.Application/Exceptions/BusinessException.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb6b3fbb61ec1911899259b17b249cbd9766e054",
+      "size": 373,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/eb6b3fbb61ec1911899259b17b249cbd9766e054"
+    },
+    {
+      "path": "TaskFlow.Application/Exceptions/ConflictException.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "19fc1f724d9727a02fc86cb87483a4ad9742beb4",
+      "size": 340,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/19fc1f724d9727a02fc86cb87483a4ad9742beb4"
+    },
+    {
+      "path": "TaskFlow.Application/Exceptions/ForbiddenException.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38bd39b0fe864817d7b5bd42779bbece37ffa176",
+      "size": 342,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/38bd39b0fe864817d7b5bd42779bbece37ffa176"
+    },
+    {
+      "path": "TaskFlow.Application/Exceptions/NotFoundException.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "05a7e233473f2b24d25501bcdd2bf1e6fc72eb5c",
+      "size": 340,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/05a7e233473f2b24d25501bcdd2bf1e6fc72eb5c"
+    },
+    {
+      "path": "TaskFlow.Application/Exceptions/UnauthorizedException.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "feb4a57787d60a12887820de683a450e6b79961f",
+      "size": 348,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/feb4a57787d60a12887820de683a450e6b79961f"
+    },
+    {
+      "path": "TaskFlow.Application/Features",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1fc0ef1d1e691676dc68ebe6edd58a62627cc5c8",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/1fc0ef1d1e691676dc68ebe6edd58a62627cc5c8"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Identity",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "28298b9cca483c62533c23462b1240f55e0943ef",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/28298b9cca483c62533c23462b1240f55e0943ef"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Identity/User",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b9ee76d4ec9f0ec04add782270a235e5fbcd3233",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/b9ee76d4ec9f0ec04add782270a235e5fbcd3233"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Identity/User/Commands",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "98328ee9351d0893999e96ecc0881c15016cad9f",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/98328ee9351d0893999e96ecc0881c15016cad9f"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Identity/User/Commands/LoginUser",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2914b1ed1f538ea7721afe7da0061b22b2f84561",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/2914b1ed1f538ea7721afe7da0061b22b2f84561"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Identity/User/Commands/LoginUser/LoginUserCommand.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "670dd355aeb6742d12b826b6b6eec85f03ff0e6c",
+      "size": 302,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/670dd355aeb6742d12b826b6b6eec85f03ff0e6c"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Identity/User/Commands/LoginUser/LoginUserCommandHandler.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a0caed8571d4d4c56491cbeb924a5559d14676df",
+      "size": 3326,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/a0caed8571d4d4c56491cbeb924a5559d14676df"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Identity/User/Commands/RegisterUser",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "50d38a6658bb1d678a47b9c318002661a7db907d",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/50d38a6658bb1d678a47b9c318002661a7db907d"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Identity/User/Commands/RegisterUser/RegisterUserCommand.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41026d554962a686efb0ee9c3e6292c2d3b27b21",
+      "size": 292,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/41026d554962a686efb0ee9c3e6292c2d3b27b21"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Identity/User/Commands/RegisterUser/RegisterUserCommandHandler.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e0c8504ab6f5033fbcc713ea8a721cf9e6ad9df9",
+      "size": 2584,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/e0c8504ab6f5033fbcc713ea8a721cf9e6ad9df9"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Identity/User/DTOs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "13d6b8c08beb605de255a3ad4fd58c5164224ff0",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/13d6b8c08beb605de255a3ad4fd58c5164224ff0"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Identity/User/DTOs/Commands",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c16ed094f6032d4e66c0be02bd628909c81d1acc",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/c16ed094f6032d4e66c0be02bd628909c81d1acc"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Identity/User/DTOs/Commands/LoginUser",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6338bc06b2593e4b05a5a65771e54b2508b1583a",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/6338bc06b2593e4b05a5a65771e54b2508b1583a"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Identity/User/DTOs/Commands/LoginUser/LoginUserResponseDto.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d53cdd1c15ef6f461883a6d21ed34253593f0a18",
+      "size": 365,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/d53cdd1c15ef6f461883a6d21ed34253593f0a18"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Identity/User/Validators",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "43446809aed78b395c59bab244ffcafe537f899d",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/43446809aed78b395c59bab244ffcafe537f899d"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Identity/User/Validators/Commands",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1fd27f252976736c8b10c868d38ea3b8d5327fae",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/1fd27f252976736c8b10c868d38ea3b8d5327fae"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Identity/User/Validators/Commands/LoginUser",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b8b732a6504cefde81ca0e5c9fa165cbe2694f62",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/b8b732a6504cefde81ca0e5c9fa165cbe2694f62"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Identity/User/Validators/Commands/LoginUser/LoginUserCommandValidator.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "06989bd567fe8df973dbc8d10c22c615ac215adb",
+      "size": 586,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/06989bd567fe8df973dbc8d10c22c615ac215adb"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Identity/User/Validators/Commands/RegisterUser",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e6930df8fd6bf6328c544644ef3cfaa5189a60cc",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/e6930df8fd6bf6328c544644ef3cfaa5189a60cc"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Identity/User/Validators/Commands/RegisterUser/RegisterUserCommandValidator.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b0cc7c125a644e7d081a83c2a45b974c3d409de0",
+      "size": 1360,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/b0cc7c125a644e7d081a83c2a45b974c3d409de0"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "203e26470dfa104343e1506720906d3dbb3a7cf2",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/203e26470dfa104343e1506720906d3dbb3a7cf2"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/Organization",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "05f9bbadfcb9785c2b8f77c8b99e4075fac89ea0",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/05f9bbadfcb9785c2b8f77c8b99e4075fac89ea0"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/Organization/Commands",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e2bb5c7dd7701e8ecac99ef69400ad38bc554482",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/e2bb5c7dd7701e8ecac99ef69400ad38bc554482"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/Organization/Commands/CreateOrganization",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f89090a94674525022de79ce203337119ef5f0ad",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/f89090a94674525022de79ce203337119ef5f0ad"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/Organization/Commands/CreateOrganization/CreateOrganizationCommand.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b7dc085700547fc2ace8ad7b66455b367f083d4",
+      "size": 265,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/5b7dc085700547fc2ace8ad7b66455b367f083d4"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/Organization/Commands/CreateOrganization/CreateOrganizationCommandHandler.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bda56b537d7fc7aede7fb6830f7dc415f4183ddf",
+      "size": 2383,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/bda56b537d7fc7aede7fb6830f7dc415f4183ddf"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/Organization/Commands/CreateOrganization/CreateOrganizationCommandValidator.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "83c95ce19885b5063dc50748e0814a7e4963b73e",
+      "size": 852,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/83c95ce19885b5063dc50748e0814a7e4963b73e"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/Organization/Commands/DeleteOrganization",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "179af39dfdb270a5149184ddd2ab2f7969ee7f68",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/179af39dfdb270a5149184ddd2ab2f7969ee7f68"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/Organization/Commands/DeleteOrganization/DeleteOrganizationCommand.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d20e52a901ccd34805c2ec90239134245fa38a5b",
+      "size": 214,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/d20e52a901ccd34805c2ec90239134245fa38a5b"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/Organization/Commands/DeleteOrganization/DeleteOrganizationCommandHandler.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "83f0ea81807aeb8b40b3967d453bd7f06684b8ee",
+      "size": 1455,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/83f0ea81807aeb8b40b3967d453bd7f06684b8ee"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/Organization/Commands/DeleteOrganization/DeleteOrganizationCommandValidator.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d42b9484cf36e147b2c0e773077447449cb06bc2",
+      "size": 461,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/d42b9484cf36e147b2c0e773077447449cb06bc2"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/Organization/Commands/UpdateOraganization",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1ccd55b9a9f9085b4fc8807cb40d611d2a1f5382",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/1ccd55b9a9f9085b4fc8807cb40d611d2a1f5382"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/Organization/Commands/UpdateOraganization/UpdateOrganizationCommand.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4cdfeb6983cde209a14690c946eb150f1ac8edcf",
+      "size": 264,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/4cdfeb6983cde209a14690c946eb150f1ac8edcf"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/Organization/Commands/UpdateOraganization/UpdateOrganizationCommandHandler.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce4a38e9eb43138e2679f3772b36a7ef5023c4d7",
+      "size": 2041,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/ce4a38e9eb43138e2679f3772b36a7ef5023c4d7"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/Organization/Commands/UpdateOraganization/UpdateOrganizationCommandValidator.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8fb6128415a30eaa5a436e6b3b20c925b664ee37",
+      "size": 900,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/8fb6128415a30eaa5a436e6b3b20c925b664ee37"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationInvitation",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ce3ee9942493243594a679930cd33ca3484be303",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/ce3ee9942493243594a679930cd33ca3484be303"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationInvitation/Commands",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "04a9947e3d258ce91a349691fc49b83754cb43e9",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/04a9947e3d258ce91a349691fc49b83754cb43e9"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationInvitation/Commands/AcceptInvitation",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "85224a3e823a0ee594d8146ea8ef8397a94c6e75",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/85224a3e823a0ee594d8146ea8ef8397a94c6e75"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationInvitation/Commands/AcceptInvitation/AcceptInvitationCommand.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9347216dbeb8a60604b667f8cf2ad6bc918857e1",
+      "size": 218,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/9347216dbeb8a60604b667f8cf2ad6bc918857e1"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationInvitation/Commands/AcceptInvitation/AcceptInvitationCommandHandler.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c2ffcbdf58cf4d1f8796977f3d758c4da1971e77",
+      "size": 3650,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/c2ffcbdf58cf4d1f8796977f3d758c4da1971e77"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationInvitation/Commands/AcceptInvitation/AcceptInvitationCommandValidator.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "223a073664a2036a0a37216897d7a869c900816b",
+      "size": 459,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/223a073664a2036a0a37216897d7a869c900816b"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationInvitation/Commands/CancelInvitation",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5c571ed6383a0de6a7091ccd5e40b0dbadcaa8f0",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/5c571ed6383a0de6a7091ccd5e40b0dbadcaa8f0"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationInvitation/Commands/CancelInvitation/CancelInvitationCommand.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "acc64875cb0e49cc216134351a3774c52abed105",
+      "size": 218,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/acc64875cb0e49cc216134351a3774c52abed105"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationInvitation/Commands/CancelInvitation/CancelInvitationCommandHandler.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf1b0b7a6f93339ed2c972a374bf4c9a62c343ad",
+      "size": 1644,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/bf1b0b7a6f93339ed2c972a374bf4c9a62c343ad"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationInvitation/Commands/CancelInvitation/CancelInvitationCommandValidator.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e971a70b72b55890a300ccd647dbea804143b9f3",
+      "size": 459,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/e971a70b72b55890a300ccd647dbea804143b9f3"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationInvitation/Commands/InviteUser",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4aab20618c084e5fa08d75cb2621c4399767cd4c",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/4aab20618c084e5fa08d75cb2621c4399767cd4c"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationInvitation/Commands/InviteUser/InviteUserCommand.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2773e4cf7416b8c1921d8bb8ea8837bfb95a880a",
+      "size": 296,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/2773e4cf7416b8c1921d8bb8ea8837bfb95a880a"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationInvitation/Commands/InviteUser/InviteUserCommandHandler.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38b9c9e8c4dcdbb995212988d145a18e246a714a",
+      "size": 3268,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/38b9c9e8c4dcdbb995212988d145a18e246a714a"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationInvitation/Commands/InviteUser/InviteUserCommandValidator.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d9253d91703a66d0538e8ae5ed1ce5bc3bd4810",
+      "size": 669,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/8d9253d91703a66d0538e8ae5ed1ce5bc3bd4810"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationInvitation/Commands/RejectInvitation",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "868e3e4c525a2139fb585c7f4d4ae842b1fd078f",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/868e3e4c525a2139fb585c7f4d4ae842b1fd078f"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationInvitation/Commands/RejectInvitation/RejectInvitationCommand.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "05f5591f96a011c67cf3f2d0a4b1b9f0e387e2ec",
+      "size": 218,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/05f5591f96a011c67cf3f2d0a4b1b9f0e387e2ec"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationInvitation/Commands/RejectInvitation/RejectInvitationCommandHandler.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5ef7c0ca62b689292abacb2e26381ac061b1adc",
+      "size": 1644,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/c5ef7c0ca62b689292abacb2e26381ac061b1adc"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationInvitation/Commands/RejectInvitation/RejectInvitationCommandValidator.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d3d7e8f3203abf249cfbea90fc6de2b2dbd30ee",
+      "size": 459,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/3d3d7e8f3203abf249cfbea90fc6de2b2dbd30ee"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationMember",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b3636ddac625bdb894372af92cd8f05329d35373",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/b3636ddac625bdb894372af92cd8f05329d35373"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationMember/Commands",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2e01a1ab87b83397166c8022fcd4e4376b19820c",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/2e01a1ab87b83397166c8022fcd4e4376b19820c"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationMember/Commands/ActivateMember",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "362ece9b739a80e952e372cd5fbcff6bd3bfdb75",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/362ece9b739a80e952e372cd5fbcff6bd3bfdb75"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationMember/Commands/ActivateMember/ActivateMemberCommand.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "69e258a89a98e41605cbd9859b111f454951e4b1",
+      "size": 232,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/69e258a89a98e41605cbd9859b111f454951e4b1"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationMember/Commands/ActivateMember/ActivateMemberCommandHandler.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd646cb5978b3db965662aaa967e492a5732a2c0",
+      "size": 1633,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/fd646cb5978b3db965662aaa967e492a5732a2c0"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationMember/Commands/ActivateMember/ActivateMemberCommandValidator.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d502ff873316e621c6898d3f1de46ab033430b7",
+      "size": 573,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/7d502ff873316e621c6898d3f1de46ab033430b7"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationMember/Commands/ChangeMemberRole",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b714f6edbac8c44b1ad20eeebc1d47c1eede5542",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/b714f6edbac8c44b1ad20eeebc1d47c1eede5542"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationMember/Commands/ChangeMemberRole/ChangeMemberRoleCommand.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "460e050f99c4b6655b6bc3fba770b89dc080a055",
+      "size": 268,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/460e050f99c4b6655b6bc3fba770b89dc080a055"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationMember/Commands/ChangeMemberRole/ChangeMemberRoleCommandHandler.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d4004bd0c93f061dda19ea334d1af62ba6fe7ed",
+      "size": 2338,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/5d4004bd0c93f061dda19ea334d1af62ba6fe7ed"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationMember/Commands/ChangeMemberRole/ChangeMemberRoleCommandValidator.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3170c30cb2f6c4b24186ac93e2cc864ff14445a",
+      "size": 728,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/e3170c30cb2f6c4b24186ac93e2cc864ff14445a"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationMember/Commands/DeactivateMember",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b0b0c9bfe4ff2ab944756a6181c53c369d0f9072",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/b0b0c9bfe4ff2ab944756a6181c53c369d0f9072"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationMember/Commands/DeactivateMember/DeactivateMemberCommand.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eaab000261d7672c0cb77184ef33b95bb9eae73f",
+      "size": 236,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/eaab000261d7672c0cb77184ef33b95bb9eae73f"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationMember/Commands/DeactivateMember/DeactivateMemberCommandHandler.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3c7fb9b8036156f27a771d477f1672f280b3f0c",
+      "size": 1645,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/c3c7fb9b8036156f27a771d477f1672f280b3f0c"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationMember/Commands/DeactivateMember/DeactivateMemberCommandValidator.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d18b97c2bb2ee5dc6e12c9d86a6df04ee6debc6",
+      "size": 581,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/1d18b97c2bb2ee5dc6e12c9d86a6df04ee6debc6"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationMember/Commands/RemoveMember",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "590039c778dd2b2652f258924f2cd3293698148f",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/590039c778dd2b2652f258924f2cd3293698148f"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationMember/Commands/RemoveMember/RemoveMemberCommand.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e8b3c528290f92b1a02b430813dcaa1065583c2",
+      "size": 231,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/4e8b3c528290f92b1a02b430813dcaa1065583c2"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationMember/Commands/RemoveMember/RemoveMemberCommandHandler.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86d33d5f29b6600a5a4b81026a029e0eaa4a1009",
+      "size": 1625,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/86d33d5f29b6600a5a4b81026a029e0eaa4a1009"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationMember/Commands/RemoveMember/RemoveMemberCommandValidator.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c53048abd5f0107b904010373ee2735e195b979f",
+      "size": 565,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/c53048abd5f0107b904010373ee2735e195b979f"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationRole",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ab18ee6069698e79d150bfec99d923f8f1d0ebc8",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/ab18ee6069698e79d150bfec99d923f8f1d0ebc8"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationRole/Commands",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "82e263018a00383d9af1825e64d1048baca963c9",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/82e263018a00383d9af1825e64d1048baca963c9"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationRole/Commands/CreateRole",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "796fb077d2f97cf5131edef49e9a039b9fe39053",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/796fb077d2f97cf5131edef49e9a039b9fe39053"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationRole/Commands/CreateRole/CreateRoleCommand.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a8b14e823df85ce862029796e2fe73fa230a46d",
+      "size": 256,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/1a8b14e823df85ce862029796e2fe73fa230a46d"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationRole/Commands/CreateRole/CreateRoleCommandHandler.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "98e837de719dab93bdc6d4fb529e074b6b7ed459",
+      "size": 2405,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/98e837de719dab93bdc6d4fb529e074b6b7ed459"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationRole/Commands/CreateRole/CreateRoleCommandValidator.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a1ec58020b94db0199adc59a6cee194fe524899",
+      "size": 811,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/4a1ec58020b94db0199adc59a6cee194fe524899"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationRole/Commands/DeleteRole",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9b50c700a6ffce6a0fae3d2f7e854b0957755ac3",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/9b50c700a6ffce6a0fae3d2f7e854b0957755ac3"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationRole/Commands/DeleteRole/DeleteRoleCommand.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f27f65631164169d425ac553a217fca8752837c",
+      "size": 194,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/4f27f65631164169d425ac553a217fca8752837c"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationRole/Commands/DeleteRole/DeleteRoleCommandHandler.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "51acaea1cf0cad874b1567f1ff847c71f8889cc3",
+      "size": 1399,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/51acaea1cf0cad874b1567f1ff847c71f8889cc3"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationRole/Commands/DeleteRole/DeleteRoleCommandValidator.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29e02790507dbc2e3c6098fef61a112e70369b9a",
+      "size": 417,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/29e02790507dbc2e3c6098fef61a112e70369b9a"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationRole/Commands/UpdateRole",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fb8c056d5153be57e4fc5239242e49c8a28e147b",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/fb8c056d5153be57e4fc5239242e49c8a28e147b"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationRole/Commands/UpdateRole/UpdateRoleCommand.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77161181ee830cc2e1a80360ba66a70a3eb030e1",
+      "size": 243,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/77161181ee830cc2e1a80360ba66a70a3eb030e1"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationRole/Commands/UpdateRole/UpdateRoleCommandHandler.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e23f3579e5613418c5cbeb5c26dc607ffc43ba70",
+      "size": 1990,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/e23f3579e5613418c5cbeb5c26dc607ffc43ba70"
+    },
+    {
+      "path": "TaskFlow.Application/Features/Organizations/OrganizationRole/Commands/UpdateRole/UpdateRoleCommandValidator.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "34d5bb3ecd86ca0ee57236ea75539544532cc40a",
+      "size": 795,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/34d5bb3ecd86ca0ee57236ea75539544532cc40a"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d7a75a06a4f605d36e9f68095235d1efa28607eb",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/d7a75a06a4f605d36e9f68095235d1efa28607eb"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/Projects",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4203ca48524aa00a6ea5089e04b656b206a3b4b8",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/4203ca48524aa00a6ea5089e04b656b206a3b4b8"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/Projects/Commands",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9f34e07ae03a0b6eafb24779600cbef2362236b4",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/9f34e07ae03a0b6eafb24779600cbef2362236b4"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/Projects/Commands/CreateProject",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "23a853a2f1a4d943d1361b44cd3acfbc3ef5c15c",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/23a853a2f1a4d943d1361b44cd3acfbc3ef5c15c"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/Projects/Commands/CreateProject/CreateProjectCommand.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2d4ae0748b7790f7b1d17a6959b7855b9412e75",
+      "size": 355,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/b2d4ae0748b7790f7b1d17a6959b7855b9412e75"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/Projects/Commands/CreateProject/CreateProjectCommandHandler.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d9c142a87da3d8172755cc2c08f67759f9cfaba",
+      "size": 2997,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/1d9c142a87da3d8172755cc2c08f67759f9cfaba"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/Projects/Commands/CreateProject/CreateProjectCommandValidator.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c91bce02f26320104071226828291f9f0a9c1ce0",
+      "size": 864,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/c91bce02f26320104071226828291f9f0a9c1ce0"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/Projects/Commands/DeleteProject",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "373d44f524ed0016bb4b5b827d16a4d8bde17cda",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/373d44f524ed0016bb4b5b827d16a4d8bde17cda"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/Projects/Commands/DeleteProject/DeleteProjectCommand.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "79001fb7eaa2098adb601af14799a7389363a077",
+      "size": 196,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/79001fb7eaa2098adb601af14799a7389363a077"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/Projects/Commands/DeleteProject/DeleteProjectCommandHandler.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d7646dfa6f43f6e372f998b2266b04834b70e2a",
+      "size": 1341,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/7d7646dfa6f43f6e372f998b2266b04834b70e2a"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/Projects/Commands/DeleteProject/DeleteProjectCommandValidator.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ebe9f51cce32a20f89753cd0436e285246f57d8",
+      "size": 428,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/7ebe9f51cce32a20f89753cd0436e285246f57d8"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/Projects/Commands/UpdateProject",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "efd3b4b7a8ff2bda91e8e9fc2ee1f3f0fd43f2bd",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/efd3b4b7a8ff2bda91e8e9fc2ee1f3f0fd43f2bd"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/Projects/Commands/UpdateProject/UpdateProjectCommand.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "121ba46cdaf062273306321af714dc74d4d9b93a",
+      "size": 288,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/121ba46cdaf062273306321af714dc74d4d9b93a"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/Projects/Commands/UpdateProject/UpdateProjectCommandHandler.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93b1de33da9f6891450a3d62d12e7476c3b702cb",
+      "size": 1977,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/93b1de33da9f6891450a3d62d12e7476c3b702cb"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/Projects/Commands/UpdateProject/UpdateProjectCommandValidator.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a07054a4aea017165968161a97788f72f4db4779",
+      "size": 859,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/a07054a4aea017165968161a97788f72f4db4779"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/SubTasks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4f37f5dbc71f5afe7c0a645d4e49358507e1aeb0",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/4f37f5dbc71f5afe7c0a645d4e49358507e1aeb0"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/SubTasks/Commands",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "df1b0f453a945a96d4d80fb8c97c9fc2dab764a7",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/df1b0f453a945a96d4d80fb8c97c9fc2dab764a7"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/SubTasks/Commands/CompleteSubTask",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "090b16a2d696ef4bbbf8368029366ce7aaac1ab9",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/090b16a2d696ef4bbbf8368029366ce7aaac1ab9"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/SubTasks/Commands/CompleteSubTask/CompleteSubTaskCommand.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d05386ce08097aeea4b4eb3011657e73f7e4070",
+      "size": 200,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/1d05386ce08097aeea4b4eb3011657e73f7e4070"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/SubTasks/Commands/CompleteSubTask/CompleteSubTaskCommandHandler.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "04024c1fa9e262fd7c49be58d4249f4e01f12c31",
+      "size": 1982,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/04024c1fa9e262fd7c49be58d4249f4e01f12c31"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/SubTasks/Commands/CompleteSubTask/CompleteSubTaskCommandValidator.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e9455d2986ba1c1aa6eb7f3a8837bc922985b28",
+      "size": 436,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/9e9455d2986ba1c1aa6eb7f3a8837bc922985b28"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/SubTasks/Commands/CreateSubTask",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "68ab518781006392c6ae4570f445c97cae5ff600",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/68ab518781006392c6ae4570f445c97cae5ff600"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/SubTasks/Commands/CreateSubTask/CreateSubTaskCommand.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b4b8ba88c3c270eaf9a59d4ff5451c70ffe73e67",
+      "size": 220,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/b4b8ba88c3c270eaf9a59d4ff5451c70ffe73e67"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/SubTasks/Commands/CreateSubTask/CreateSubTaskCommandHandler.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "64362f907218fb9b1a302fcab6c684354861c163",
+      "size": 2283,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/64362f907218fb9b1a302fcab6c684354861c163"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/SubTasks/Commands/CreateSubTask/CreateSubTaskCommandValidator.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09fef1303bfcf8829f3d07120475c2bc79c8f405",
+      "size": 678,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/09fef1303bfcf8829f3d07120475c2bc79c8f405"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/SubTasks/Commands/DeleteSubTask",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "eb6be3ce984555ea3d347766e593e122c6dfaf18",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/eb6be3ce984555ea3d347766e593e122c6dfaf18"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/SubTasks/Commands/DeleteSubTask/DeleteSubTaskCommand.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e83bc1f49758de5184f12ce192ce47cab0647ba6",
+      "size": 196,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/e83bc1f49758de5184f12ce192ce47cab0647ba6"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/SubTasks/Commands/DeleteSubTask/DeleteSubTaskCommandHandler.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e32fd097139b9b7017dac1f2d8e9a02e7ffddc4",
+      "size": 1962,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/2e32fd097139b9b7017dac1f2d8e9a02e7ffddc4"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/SubTasks/Commands/DeleteSubTask/DeleteSubTaskCommandValidator.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "240f6c67523f3cdc4d35bf3e207af3181e7710bf",
+      "size": 428,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/240f6c67523f3cdc4d35bf3e207af3181e7710bf"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/SubTasks/Commands/ReOpenSubTask",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a026d65a7f44727f37d4cdf560d74c3a9a2b8116",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/a026d65a7f44727f37d4cdf560d74c3a9a2b8116"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/SubTasks/Commands/ReOpenSubTask/ReOpenSubTaskCommand.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3491d79dbfe90248187500e859038159346fb72",
+      "size": 196,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/c3491d79dbfe90248187500e859038159346fb72"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/SubTasks/Commands/ReOpenSubTask/ReOpenSubTaskCommandHandler.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf9f8521aa1d055fecb5b49e834d90c3dd015670",
+      "size": 1970,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/cf9f8521aa1d055fecb5b49e834d90c3dd015670"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/SubTasks/Commands/ReOpenSubTask/ReOpenSubTaskCommandValidator.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f343b61274c39d050ccdff9b7077271193fda80d",
+      "size": 428,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/f343b61274c39d050ccdff9b7077271193fda80d"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/SubTasks/Commands/UpdateSubTask",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "81d7ae0cc97baf3b0630fd6d2cda4610da94f9d0",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/81d7ae0cc97baf3b0630fd6d2cda4610da94f9d0"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/SubTasks/Commands/UpdateSubTask/UpdateSubTaskCommand.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6dbf69cbeec1f9a11669ba567e930c1b9968c8b3",
+      "size": 218,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/6dbf69cbeec1f9a11669ba567e930c1b9968c8b3"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/SubTasks/Commands/UpdateSubTask/UpdateSubTaskCommandHandler.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1557f3db1f6a2ee44e5ecfe4038cfe6fd5c5599d",
+      "size": 1909,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/1557f3db1f6a2ee44e5ecfe4038cfe6fd5c5599d"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/SubTasks/Commands/UpdateSubTask/UpdateSubTaskCommandValidator.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "020cb1b1814de363ce47ef19f21221c8b5098879",
+      "size": 684,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/020cb1b1814de363ce47ef19f21221c8b5098879"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/Tasks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3945e59e404cad72cbe6dbcc5a4bafb7fc0847a2",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/3945e59e404cad72cbe6dbcc5a4bafb7fc0847a2"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/Tasks/Commands",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dd3f15c88f72da0c1af309a14b1ee453097305a9",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/dd3f15c88f72da0c1af309a14b1ee453097305a9"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/Tasks/Commands/CompleteTask",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "939d8a5a9a99a14766e0f431f8e407157ee8cdfd",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/939d8a5a9a99a14766e0f431f8e407157ee8cdfd"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/Tasks/Commands/CompleteTask/CompleteTaskCommand.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad114803913f82609ec3e92f0b4f3836f8e36df8",
+      "size": 188,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/ad114803913f82609ec3e92f0b4f3836f8e36df8"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/Tasks/Commands/CompleteTask/CompleteTaskCommandHandler.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e0fa38c31df07a9d734e67115e8d8c70e120784f",
+      "size": 1321,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/e0fa38c31df07a9d734e67115e8d8c70e120784f"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/Tasks/Commands/CompleteTask/CompleteTaskCommandValidator.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eeeed8874d2cbc14630c9d10c6e632639ae00112",
+      "size": 415,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/eeeed8874d2cbc14630c9d10c6e632639ae00112"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/Tasks/Commands/CreateTask",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e024261bf7490352ddf88657d61a5faed89ffba4",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/e024261bf7490352ddf88657d61a5faed89ffba4"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/Tasks/Commands/CreateTask/CreateTaskCommand.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a8895b0dd14e871cafc6a74455b04b207c27037",
+      "size": 445,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/3a8895b0dd14e871cafc6a74455b04b207c27037"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/Tasks/Commands/CreateTask/CreateTaskCommandHandler.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a31c849c59d5299e933ad02171d22d99f0198fdc",
+      "size": 3978,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/a31c849c59d5299e933ad02171d22d99f0198fdc"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/Tasks/Commands/CreateTask/CreateTaskCommandValidator.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c83a3745f0e71a9b313665d0636cbf6214b9f57",
+      "size": 702,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/5c83a3745f0e71a9b313665d0636cbf6214b9f57"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/Tasks/Commands/DeleteTask",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0588428521289548b5e80a1ff0091b5d647613dc",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/0588428521289548b5e80a1ff0091b5d647613dc"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/Tasks/Commands/DeleteTask/DeleteTaskCommand.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce606814c772d7ba7a00df23c63c61a71311d775",
+      "size": 184,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/ce606814c772d7ba7a00df23c63c61a71311d775"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/Tasks/Commands/DeleteTask/DeleteTaskCommandHandler.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "80c3c9651c7781c6c5aeeff23bba36e603148589",
+      "size": 1281,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/80c3c9651c7781c6c5aeeff23bba36e603148589"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/Tasks/Commands/DeleteTask/DeleteTaskCommandValidator.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e807c4bd86ab46b546157c4c5b07de75d30f892b",
+      "size": 407,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/e807c4bd86ab46b546157c4c5b07de75d30f892b"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/Tasks/Commands/StartTask",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "03b05de8bebb0667719c81f706065c457d2a2b36",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/03b05de8bebb0667719c81f706065c457d2a2b36"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/Tasks/Commands/StartTask/StartTaskCommand.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e739217f7e8f7aaab40c9e5ab49c4c046c3706a8",
+      "size": 182,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/e739217f7e8f7aaab40c9e5ab49c4c046c3706a8"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/Tasks/Commands/StartTask/StartTaskCommandHandler.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ffccf0330ae04ab0ef08df4095dff4a624e0f96c",
+      "size": 1303,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/ffccf0330ae04ab0ef08df4095dff4a624e0f96c"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/Tasks/Commands/StartTask/StartTaskCommandValidator.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e61e907e0ad7e6d63255d6dbc5ad1e83d62bb638",
+      "size": 403,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/e61e907e0ad7e6d63255d6dbc5ad1e83d62bb638"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/Tasks/Commands/UpdateTask",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "827cb867761db5f012ad87c12934eb986cb311fe",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/827cb867761db5f012ad87c12934eb986cb311fe"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/Tasks/Commands/UpdateTask/UpdateTaskCommand.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "657dab861758563d847654f83b7b6df11c6720b0",
+      "size": 351,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/657dab861758563d847654f83b7b6df11c6720b0"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/Tasks/Commands/UpdateTask/UpdateTaskCommandHandler.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0fba6b41d9e2fb71277315125e89f05d244f47a7",
+      "size": 1934,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/0fba6b41d9e2fb71277315125e89f05d244f47a7"
+    },
+    {
+      "path": "TaskFlow.Application/Features/WorkManagement/Tasks/Commands/UpdateTask/UpdateTaskCommandValidator.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f4da9664afcd17d71b76b696a524517fbdb7fd20",
+      "size": 832,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/f4da9664afcd17d71b76b696a524517fbdb7fd20"
+    },
+    {
+      "path": "TaskFlow.Application/TaskFlow.Application.csproj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c1f1127768ee33b6d43448e58436e289be85c7e",
+      "size": 1800,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/4c1f1127768ee33b6d43448e58436e289be85c7e"
+    },
+    {
+      "path": "TaskFlow.Domain",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4a6d231f54ca819ec8cf245ec91626071275e9ed",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/4a6d231f54ca819ec8cf245ec91626071275e9ed"
+    },
+    {
+      "path": "TaskFlow.Domain/Common",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b32937d2ca9bf0d59ae19b891b7ac759593a5a12",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/b32937d2ca9bf0d59ae19b891b7ac759593a5a12"
+    },
+    {
+      "path": "TaskFlow.Domain/Common/AuditableEntity.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cac420da3abd6fd7b4e6738a9415c1c710a087d3",
+      "size": 998,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/cac420da3abd6fd7b4e6738a9415c1c710a087d3"
+    },
+    {
+      "path": "TaskFlow.Domain/Common/BaseEntity.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "95226aacf7450e0105a131eecc988c95e9b98af6",
+      "size": 751,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/95226aacf7450e0105a131eecc988c95e9b98af6"
+    },
+    {
+      "path": "TaskFlow.Domain/Common/IAggregateRoot.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24355fc5b0d958f1139621964b21b031a509f440",
+      "size": 156,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/24355fc5b0d958f1139621964b21b031a509f440"
+    },
+    {
+      "path": "TaskFlow.Domain/Common/Result.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "95ebfd7316242a3ea4daf9d48e7a6e238af634b9",
+      "size": 146,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/95ebfd7316242a3ea4daf9d48e7a6e238af634b9"
+    },
+    {
+      "path": "TaskFlow.Domain/DomainEvents",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c285101d3bf9be7d354ed41ae525777d1f8a0e3f",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/c285101d3bf9be7d354ed41ae525777d1f8a0e3f"
+    },
+    {
+      "path": "TaskFlow.Domain/DomainEvents/DomainEvent.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e21894411ae0355f064a07700025c8d108d8e086",
+      "size": 318,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/e21894411ae0355f064a07700025c8d108d8e086"
+    },
+    {
+      "path": "TaskFlow.Domain/DomainEvents/IDomainEvent.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f113d62c9ef2610b83ebbe06fc5bc64a0f38be51",
+      "size": 197,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/f113d62c9ef2610b83ebbe06fc5bc64a0f38be51"
+    },
+    {
+      "path": "TaskFlow.Domain/DomainEvents/Identity",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f975cb18337279869c22a0c3fc5224576a99ffed",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/f975cb18337279869c22a0c3fc5224576a99ffed"
+    },
+    {
+      "path": "TaskFlow.Domain/DomainEvents/Identity/User",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c4c78279b62979e3d5b97e9e407ba7be04180bad",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/c4c78279b62979e3d5b97e9e407ba7be04180bad"
+    },
+    {
+      "path": "TaskFlow.Domain/DomainEvents/Identity/User/UserActivatedEvent.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "79382648bddbd1d8915b31474436f335f45def5a",
+      "size": 298,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/79382648bddbd1d8915b31474436f335f45def5a"
+    },
+    {
+      "path": "TaskFlow.Domain/DomainEvents/Identity/User/UserDeactivatedEvent.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f8ab48039756d3ba7581201503cad4f617fc37b",
+      "size": 302,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/1f8ab48039756d3ba7581201503cad4f617fc37b"
+    },
+    {
+      "path": "TaskFlow.Domain/DomainEvents/Identity/User/UserEmailVerifiedEvent.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "372d2ea1cb8d58baf0a41d27dd60441e7d2757dc",
+      "size": 306,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/372d2ea1cb8d58baf0a41d27dd60441e7d2757dc"
+    },
+    {
+      "path": "TaskFlow.Domain/DomainEvents/Identity/User/UserPasswordChangedEvent.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "89f7aa360f591503f74f6ecfb3741ac1ab29d66a",
+      "size": 310,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/89f7aa360f591503f74f6ecfb3741ac1ab29d66a"
+    },
+    {
+      "path": "TaskFlow.Domain/DomainEvents/Identity/User/UserPhoneNumberChangedEvent.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "afd3e30fcf3132a1ccd5d32c7b16e3c51a657577",
+      "size": 444,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/afd3e30fcf3132a1ccd5d32c7b16e3c51a657577"
+    },
+    {
+      "path": "TaskFlow.Domain/DomainEvents/Identity/User/UserRegisteredEvent.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35a5b85da461c3a4891d3f066f494b43e62a8b94",
+      "size": 416,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/35a5b85da461c3a4891d3f066f494b43e62a8b94"
+    },
+    {
+      "path": "TaskFlow.Domain/DomainEvents/Identity/User/UserSuspendedEvent.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35d65bdcfbc2f66de11cc9b1ba3558df35b2af0f",
+      "size": 298,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/35d65bdcfbc2f66de11cc9b1ba3558df35b2af0f"
+    },
+    {
+      "path": "TaskFlow.Domain/Entities",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "55183e9b3d430b7bcdfb452791b19c335c610d3f",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/55183e9b3d430b7bcdfb452791b19c335c610d3f"
+    },
+    {
+      "path": "TaskFlow.Domain/Entities/Identity",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8156e3557c423b6209e64165c759a92ef5dd0cdd",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/8156e3557c423b6209e64165c759a92ef5dd0cdd"
+    },
+    {
+      "path": "TaskFlow.Domain/Entities/Identity/RefreshToken.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9310ecdf9f9e07a27f1474247bb5485d4165ce30",
+      "size": 1438,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/9310ecdf9f9e07a27f1474247bb5485d4165ce30"
+    },
+    {
+      "path": "TaskFlow.Domain/Entities/Identity/SystemRole .cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f036aaa4176ef99aeb6e0709618d6f9c56ef7b72",
+      "size": 1010,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/f036aaa4176ef99aeb6e0709618d6f9c56ef7b72"
+    },
+    {
+      "path": "TaskFlow.Domain/Entities/Identity/User.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "95a06a315e27fe366e9295e2c521e9366f19181f",
+      "size": 4426,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/95a06a315e27fe366e9295e2c521e9366f19181f"
+    },
+    {
+      "path": "TaskFlow.Domain/Entities/Identity/UserRole.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca15ec304adbade6279d79774527eac8d48f8395",
+      "size": 460,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/ca15ec304adbade6279d79774527eac8d48f8395"
+    },
+    {
+      "path": "TaskFlow.Domain/Entities/Organization",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d5307f537db99e2c7dcc3c7c0814d3c04cfc2e9d",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/d5307f537db99e2c7dcc3c7c0814d3c04cfc2e9d"
+    },
+    {
+      "path": "TaskFlow.Domain/Entities/Organization/Organization.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba949e497fffe1746dd08cb0f884349538853d76",
+      "size": 2391,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/ba949e497fffe1746dd08cb0f884349538853d76"
+    },
+    {
+      "path": "TaskFlow.Domain/Entities/Organization/OrganizationInvitation.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f7355dcc19d2f858b90c2bf6c462964c016350ab",
+      "size": 1951,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/f7355dcc19d2f858b90c2bf6c462964c016350ab"
+    },
+    {
+      "path": "TaskFlow.Domain/Entities/Organization/OrganizationMember.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e45913480526048ad11923b5df92d1b1ef5732d",
+      "size": 1204,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/7e45913480526048ad11923b5df92d1b1ef5732d"
+    },
+    {
+      "path": "TaskFlow.Domain/Entities/Organization/OrganizationPermission.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ba93bf95de0549b2f9b1c4ede5c39a9021f617c",
+      "size": 177,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/1ba93bf95de0549b2f9b1c4ede5c39a9021f617c"
+    },
+    {
+      "path": "TaskFlow.Domain/Entities/Organization/OrganizationRole.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5d5d866217c55355b00ba7ec56b6d7fad9fd47e",
+      "size": 1215,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/b5d5d866217c55355b00ba7ec56b6d7fad9fd47e"
+    },
+    {
+      "path": "TaskFlow.Domain/Entities/WorkManagement",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "28a30a240fc271ed1bb97edebe86eaacc4b39511",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/28a30a240fc271ed1bb97edebe86eaacc4b39511"
+    },
+    {
+      "path": "TaskFlow.Domain/Entities/WorkManagement/Projects",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b68cb0bb6ba303b0a56a7b834896ce83d220c849",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/b68cb0bb6ba303b0a56a7b834896ce83d220c849"
+    },
+    {
+      "path": "TaskFlow.Domain/Entities/WorkManagement/Projects/Project.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "efaaf0f41979664d5e4769041f22af4ef8238a8a",
+      "size": 3531,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/efaaf0f41979664d5e4769041f22af4ef8238a8a"
+    },
+    {
+      "path": "TaskFlow.Domain/Entities/WorkManagement/SubTasks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d8f20d3a5d28d37fd37851350629f594b67d8585",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/d8f20d3a5d28d37fd37851350629f594b67d8585"
+    },
+    {
+      "path": "TaskFlow.Domain/Entities/WorkManagement/SubTasks/SubTask.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a1a0ca561cc58fd89ea91ab0fed548441cf28980",
+      "size": 1605,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/a1a0ca561cc58fd89ea91ab0fed548441cf28980"
+    },
+    {
+      "path": "TaskFlow.Domain/Entities/WorkManagement/Tasks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "035dea085108af43b6ba3ecf7745001e6ecaa980",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/035dea085108af43b6ba3ecf7745001e6ecaa980"
+    },
+    {
+      "path": "TaskFlow.Domain/Entities/WorkManagement/Tasks/Task.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "92a8a313947b528847b0ab79b7f85d30755d621d",
+      "size": 4490,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/92a8a313947b528847b0ab79b7f85d30755d621d"
+    },
+    {
+      "path": "TaskFlow.Domain/Enums",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dc740f132e6686ce4bd4ed1ce0be3f728058ec11",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/dc740f132e6686ce4bd4ed1ce0be3f728058ec11"
+    },
+    {
+      "path": "TaskFlow.Domain/Enums/Identity",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9464b1e5b39f6a04cab831d70671ed5781567623",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/9464b1e5b39f6a04cab831d70671ed5781567623"
+    },
+    {
+      "path": "TaskFlow.Domain/Enums/Identity/AccountType.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fdd3dea6e12cdf315e01dd6cb6d7e5b2f675c39e",
+      "size": 205,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/fdd3dea6e12cdf315e01dd6cb6d7e5b2f675c39e"
+    },
+    {
+      "path": "TaskFlow.Domain/Enums/Identity/UserStatus.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "890abd0097534a9ec8d9f8f5a0a6724b8bdf10fe",
+      "size": 252,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/890abd0097534a9ec8d9f8f5a0a6724b8bdf10fe"
+    },
+    {
+      "path": "TaskFlow.Domain/Enums/Organizations",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e4cce400fa6af55b3d636697173b4c70bd3273ed",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/e4cce400fa6af55b3d636697173b4c70bd3273ed"
+    },
+    {
+      "path": "TaskFlow.Domain/Enums/Organizations/InvitationStatus.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "836aa456da580790db026a656b1b29c996d7bd91",
+      "size": 274,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/836aa456da580790db026a656b1b29c996d7bd91"
+    },
+    {
+      "path": "TaskFlow.Domain/Enums/Organizations/OrganizationStatus.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3415e5dd251e576c857a82bafcb0ab7a48e449e7",
+      "size": 232,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/3415e5dd251e576c857a82bafcb0ab7a48e449e7"
+    },
+    {
+      "path": "TaskFlow.Domain/Enums/WorkManagement",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3633367084ab141440e394400c5ec51863f49ea2",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/3633367084ab141440e394400c5ec51863f49ea2"
+    },
+    {
+      "path": "TaskFlow.Domain/Enums/WorkManagement/ProjectStatus.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bac8f15d65e6bd87d9be9a6e236eb18d15d7811a",
+      "size": 290,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/bac8f15d65e6bd87d9be9a6e236eb18d15d7811a"
+    },
+    {
+      "path": "TaskFlow.Domain/Enums/WorkManagement/TaskPriority.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "607adf4fb2a81304fea563c60f713ae431c7a69d",
+      "size": 239,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/607adf4fb2a81304fea563c60f713ae431c7a69d"
+    },
+    {
+      "path": "TaskFlow.Domain/Enums/WorkManagement/TaskStatus.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee8ca7b715c7c3e801c56bae873ba3d3ac1b1469",
+      "size": 269,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/ee8ca7b715c7c3e801c56bae873ba3d3ac1b1469"
+    },
+    {
+      "path": "TaskFlow.Domain/Exceptions",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "456938c26d8aa5e236dac09e77d68a1b0fc03b83",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/456938c26d8aa5e236dac09e77d68a1b0fc03b83"
+    },
+    {
+      "path": "TaskFlow.Domain/Exceptions/BadRequestException.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0056f18d45ae2a5d858413f6041ea43561e0af8a",
+      "size": 379,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/0056f18d45ae2a5d858413f6041ea43561e0af8a"
+    },
+    {
+      "path": "TaskFlow.Domain/Interfaces",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2de425cd8524daf0da213be27251aab73ded5372",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/2de425cd8524daf0da213be27251aab73ded5372"
+    },
+    {
+      "path": "TaskFlow.Domain/Interfaces/Identity",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a3499b2ba4efa5d9f742ea82508512bd6ff3a5f4",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/a3499b2ba4efa5d9f742ea82508512bd6ff3a5f4"
+    },
+    {
+      "path": "TaskFlow.Domain/Interfaces/Identity/User",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "00d55577bc39e99efd632f9a3889112b46a5313e",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/00d55577bc39e99efd632f9a3889112b46a5313e"
+    },
+    {
+      "path": "TaskFlow.Domain/Interfaces/Identity/User/IUserRepository.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30120acfcd90cdb8a7cfb41634b18be1f344ca1c",
+      "size": 1445,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/30120acfcd90cdb8a7cfb41634b18be1f344ca1c"
+    },
+    {
+      "path": "TaskFlow.Domain/Interfaces/Organizations",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "43af80a90bdfeff757ead5d94c3ae30949d646db",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/43af80a90bdfeff757ead5d94c3ae30949d646db"
+    },
+    {
+      "path": "TaskFlow.Domain/Interfaces/Organizations/IOrganizationInvitationRepository.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a841f4846cded0d019aa3e54204320975b814b1e",
+      "size": 1098,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/a841f4846cded0d019aa3e54204320975b814b1e"
+    },
+    {
+      "path": "TaskFlow.Domain/Interfaces/Organizations/IOrganizationMemberRepository.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2139c46da1ec8335dc46002f5c7c79f78b5a38c5",
+      "size": 1344,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/2139c46da1ec8335dc46002f5c7c79f78b5a38c5"
+    },
+    {
+      "path": "TaskFlow.Domain/Interfaces/Organizations/IOrganizationRepository.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cced2941436eb006d61171a6e5e0c571f6e1c8eb",
+      "size": 1473,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/cced2941436eb006d61171a6e5e0c571f6e1c8eb"
+    },
+    {
+      "path": "TaskFlow.Domain/Interfaces/Organizations/IOrganizationRoleRepository.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "adc64c0cf6ba89ffe24c405efde2cf9e1fbb8704",
+      "size": 1134,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/adc64c0cf6ba89ffe24c405efde2cf9e1fbb8704"
+    },
+    {
+      "path": "TaskFlow.Domain/Interfaces/Persistence",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7eb4d5d3ba6115656f40e833c93f148453f1fdb0",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/7eb4d5d3ba6115656f40e833c93f148453f1fdb0"
+    },
+    {
+      "path": "TaskFlow.Domain/Interfaces/Persistence/IUnitOfWork.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7f4df8ba263a270b31ec2b75380966268af5a28",
+      "size": 183,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/e7f4df8ba263a270b31ec2b75380966268af5a28"
+    },
+    {
+      "path": "TaskFlow.Domain/Interfaces/WorkManagement",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1f9da020a6621ec26dbf7ce964bd1b861b8871ce",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/1f9da020a6621ec26dbf7ce964bd1b861b8871ce"
+    },
+    {
+      "path": "TaskFlow.Domain/Interfaces/WorkManagement/IProjectRepository.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35623b976dcbe3a1a75151cee2cf2a7813e9fb05",
+      "size": 1209,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/35623b976dcbe3a1a75151cee2cf2a7813e9fb05"
+    },
+    {
+      "path": "TaskFlow.Domain/Interfaces/WorkManagement/ISubTaskRepository.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "64a56cea5e3b4a3aef4662bffe3af79b7d285d70",
+      "size": 880,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/64a56cea5e3b4a3aef4662bffe3af79b7d285d70"
+    },
+    {
+      "path": "TaskFlow.Domain/Interfaces/WorkManagement/ITaskRepository.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44d4d1a5a83d88f100be39f95689d32d7fd612f6",
+      "size": 1226,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/44d4d1a5a83d88f100be39f95689d32d7fd612f6"
+    },
+    {
+      "path": "TaskFlow.Domain/TaskFlow.Domain.csproj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31e014cf08e25a394e5f568013507037951ca1f5",
+      "size": 473,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/31e014cf08e25a394e5f568013507037951ca1f5"
+    },
+    {
+      "path": "TaskFlow.Domain/ValueObjects",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8840583d3ab528e7be7a1596c2df3ec5707653c3",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/8840583d3ab528e7be7a1596c2df3ec5707653c3"
+    },
+    {
+      "path": "TaskFlow.Domain/ValueObjects/Email.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ab8f1aadd49dc0824d68dd43e27ffb8c23a8db3",
+      "size": 1599,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/8ab8f1aadd49dc0824d68dd43e27ffb8c23a8db3"
+    },
+    {
+      "path": "TaskFlow.Domain/ValueObjects/FullName.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a6c53be62d27619f98275484ed9e4f5fe8e52628",
+      "size": 1671,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/a6c53be62d27619f98275484ed9e4f5fe8e52628"
+    },
+    {
+      "path": "TaskFlow.Domain/ValueObjects/PhoneNumber.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c6d0bd1a9b3e6865f25617d92ca99a890e6fa778",
+      "size": 1724,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/c6d0bd1a9b3e6865f25617d92ca99a890e6fa778"
+    },
+    {
+      "path": "TaskFlow.Infra",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6ffa87c37e55df7c5a85425acd0f04e7af94db8e",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/6ffa87c37e55df7c5a85425acd0f04e7af94db8e"
+    },
+    {
+      "path": "TaskFlow.Infra/Dapper",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d4fee89bcdc11784f8a3672b525b589a121a2d56",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/d4fee89bcdc11784f8a3672b525b589a121a2d56"
+    },
+    {
+      "path": "TaskFlow.Infra/Dapper/DapperContext.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7aa475b635eb603e2fbe3a012f1d512e3e6ffd0f",
+      "size": 152,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/7aa475b635eb603e2fbe3a012f1d512e3e6ffd0f"
+    },
+    {
+      "path": "TaskFlow.Infra/DependencyInjection",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "146446535db0c9d12f8bd49dd4fb518047c2ce97",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/146446535db0c9d12f8bd49dd4fb518047c2ce97"
+    },
+    {
+      "path": "TaskFlow.Infra/DependencyInjection/DependencyRegistration.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc5fea27959667cd9b3a7c546e27a80b3c3c49ce",
+      "size": 4434,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/fc5fea27959667cd9b3a7c546e27a80b3c3c49ce"
+    },
+    {
+      "path": "TaskFlow.Infra/DomainEvents",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cafb4cb51f91ceae21632f55c2ec3beed1baf2ca",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/cafb4cb51f91ceae21632f55c2ec3beed1baf2ca"
+    },
+    {
+      "path": "TaskFlow.Infra/DomainEvents/Dispatchers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "774052e757ae4ebf76f9044f99fa19419d635c72",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/774052e757ae4ebf76f9044f99fa19419d635c72"
+    },
+    {
+      "path": "TaskFlow.Infra/DomainEvents/Dispatchers/DomainEventDispatcher.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10a9bfff066815b50de3abfd43aea45356e43557",
+      "size": 1542,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/10a9bfff066815b50de3abfd43aea45356e43557"
+    },
+    {
+      "path": "TaskFlow.Infra/DomainEvents/Dispatchers/IDomainEventDispatcher.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "afbc3bd19408662779302cc332c3d57f41df525e",
+      "size": 357,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/afbc3bd19408662779302cc332c3d57f41df525e"
+    },
+    {
+      "path": "TaskFlow.Infra/Email",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fd487d8d3e0cd40eae75d2adfe52b16c0747afda",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/fd487d8d3e0cd40eae75d2adfe52b16c0747afda"
+    },
+    {
+      "path": "TaskFlow.Infra/Email/EmailService.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa2d8e7ada1357efc6b14a45f38839dd4e213f9a",
+      "size": 719,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/fa2d8e7ada1357efc6b14a45f38839dd4e213f9a"
+    },
+    {
+      "path": "TaskFlow.Infra/Email/EmailSettings.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e826fa06d6fe437304951975147d0369491735c",
+      "size": 477,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/9e826fa06d6fe437304951975147d0369491735c"
+    },
+    {
+      "path": "TaskFlow.Infra/Email/Smtp",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6f6d965031b554500f8fbd0edd722b091fab328a",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/6f6d965031b554500f8fbd0edd722b091fab328a"
+    },
+    {
+      "path": "TaskFlow.Infra/Email/Smtp/SmtpEmailSender.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d00a7494052160089c01a5d276fa004a23448812",
+      "size": 1242,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/d00a7494052160089c01a5d276fa004a23448812"
+    },
+    {
+      "path": "TaskFlow.Infra/Email/Templates",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e3f5d52aebab08be133fa4694025026b613d871e",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/e3f5d52aebab08be133fa4694025026b613d871e"
+    },
+    {
+      "path": "TaskFlow.Infra/Email/Templates/Welcome.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b28c57c10edf6c84ea617b7580fdc363a6a57dbe",
+      "size": 4173,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/b28c57c10edf6c84ea617b7580fdc363a6a57dbe"
+    },
+    {
+      "path": "TaskFlow.Infra/Migrations",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3e371d642f10102815341ae4fe0557b9a290094a",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/3e371d642f10102815341ae4fe0557b9a290094a"
+    },
+    {
+      "path": "TaskFlow.Infra/Migrations/20260621043748_updatedUser.Designer.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "39d03245eb6ee7af07d3ca13a184dadcaebaa2ae",
+      "size": 20726,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/39d03245eb6ee7af07d3ca13a184dadcaebaa2ae"
+    },
+    {
+      "path": "TaskFlow.Infra/Migrations/20260621043748_updatedUser.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f8fa3f5580b61abf1368bb7b3488a846eb44737",
+      "size": 17682,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/5f8fa3f5580b61abf1368bb7b3488a846eb44737"
+    },
+    {
+      "path": "TaskFlow.Infra/Migrations/20260621143146_AddedConfigurations_Identiy_Organization_Workmanagement.Designer.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a32b667747365a424e20dc4bec181b807632e3c0",
+      "size": 27362,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/a32b667747365a424e20dc4bec181b807632e3c0"
+    },
+    {
+      "path": "TaskFlow.Infra/Migrations/20260621143146_AddedConfigurations_Identiy_Organization_Workmanagement.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "812deb00095f40c03b35fec0bb4ab7cf8f83238a",
+      "size": 23089,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/812deb00095f40c03b35fec0bb4ab7cf8f83238a"
+    },
+    {
+      "path": "TaskFlow.Infra/Migrations/TaskFlowDbContextModelSnapshot.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "adfe738d2a452561d0ecc90deb56aa663e8abce5",
+      "size": 27182,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/adfe738d2a452561d0ecc90deb56aa663e8abce5"
+    },
+    {
+      "path": "TaskFlow.Infra/Persistence",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "44e8620fcf6975a3d1d78053d81ea6a3ad420a11",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/44e8620fcf6975a3d1d78053d81ea6a3ad420a11"
+    },
+    {
+      "path": "TaskFlow.Infra/Persistence/Configurations",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b42ae470d5232ac871f617264e4557245e7fe9e2",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/b42ae470d5232ac871f617264e4557245e7fe9e2"
+    },
+    {
+      "path": "TaskFlow.Infra/Persistence/Configurations/Identity",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fc67642a4059235f3fce22f8a1abc763c05ba5e1",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/fc67642a4059235f3fce22f8a1abc763c05ba5e1"
+    },
+    {
+      "path": "TaskFlow.Infra/Persistence/Configurations/Identity/RefreshTokenConfigurations.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "748394bb46d4be8502948c1f54d4607bad5415a9",
+      "size": 1632,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/748394bb46d4be8502948c1f54d4607bad5415a9"
+    },
+    {
+      "path": "TaskFlow.Infra/Persistence/Configurations/Identity/SystemRoleConfigurations.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb259f8855189e522c5252f1582a60b58a51e12b",
+      "size": 1092,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/cb259f8855189e522c5252f1582a60b58a51e12b"
+    },
+    {
+      "path": "TaskFlow.Infra/Persistence/Configurations/Identity/UserConfigurations.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86a331caaea7fff36f1ce60f5b303b284ce83fc3",
+      "size": 3362,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/86a331caaea7fff36f1ce60f5b303b284ce83fc3"
+    },
+    {
+      "path": "TaskFlow.Infra/Persistence/Configurations/Identity/UserRoleConfigurations.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5967d1020499270ca3f4f354c6da512fdc589c5f",
+      "size": 1174,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/5967d1020499270ca3f4f354c6da512fdc589c5f"
+    },
+    {
+      "path": "TaskFlow.Infra/Persistence/Configurations/Organizations",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f99fe539afbbeced0e9829c10ac166c07fbdedf0",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/f99fe539afbbeced0e9829c10ac166c07fbdedf0"
+    },
+    {
+      "path": "TaskFlow.Infra/Persistence/Configurations/Organizations/OrganizationConfigurations.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e648265db2e5da06a6d87087ae486d81f732c029",
+      "size": 2046,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/e648265db2e5da06a6d87087ae486d81f732c029"
+    },
+    {
+      "path": "TaskFlow.Infra/Persistence/Configurations/Organizations/OrganizationInvitationConfigurations.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a88037c93a4e29817f8fb6e4a59c69bef4135379",
+      "size": 1843,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/a88037c93a4e29817f8fb6e4a59c69bef4135379"
+    },
+    {
+      "path": "TaskFlow.Infra/Persistence/Configurations/Organizations/OrganizationMemberConfigurations.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a9e67d0a40d10c4f14ac61e467b2f4c7557556f",
+      "size": 1708,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/5a9e67d0a40d10c4f14ac61e467b2f4c7557556f"
+    },
+    {
+      "path": "TaskFlow.Infra/Persistence/Configurations/Organizations/OrganizationRoleConfigurations.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cebcccaf2acd11a1900bc1d10a245b59be6fd5c7",
+      "size": 1565,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/cebcccaf2acd11a1900bc1d10a245b59be6fd5c7"
+    },
+    {
+      "path": "TaskFlow.Infra/Persistence/Configurations/WorkManagement",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "482523d9656f8f630a6fe3dc36fd285ab64dcd6c",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/482523d9656f8f630a6fe3dc36fd285ab64dcd6c"
+    },
+    {
+      "path": "TaskFlow.Infra/Persistence/Configurations/WorkManagement/ProjectConfigurations.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "350ebbb3e9cc6cc4527d974da9e7b34a81487f52",
+      "size": 2122,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/350ebbb3e9cc6cc4527d974da9e7b34a81487f52"
+    },
+    {
+      "path": "TaskFlow.Infra/Persistence/Configurations/WorkManagement/SubTaskConfigurations.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "228e1eaf820ac282fae29c857274410714c9cb08",
+      "size": 1550,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/228e1eaf820ac282fae29c857274410714c9cb08"
+    },
+    {
+      "path": "TaskFlow.Infra/Persistence/Configurations/WorkManagement/TaskConfigurations.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a956c1aa0140888e7c91e421467bc3487dd850f5",
+      "size": 2355,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/a956c1aa0140888e7c91e421467bc3487dd850f5"
+    },
+    {
+      "path": "TaskFlow.Infra/Persistence/Context",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3d2cbd9bf8391dd6fc4d71993957d4ced384794d",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/3d2cbd9bf8391dd6fc4d71993957d4ced384794d"
+    },
+    {
+      "path": "TaskFlow.Infra/Persistence/Context/TaskFlowDbContext.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "570bdab346468b63d37eef00e0605f24333be940",
+      "size": 3674,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/570bdab346468b63d37eef00e0605f24333be940"
+    },
+    {
+      "path": "TaskFlow.Infra/Persistence/Repositories",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "03d13b347561bab3c72370d04e2b4c65a063310a",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/03d13b347561bab3c72370d04e2b4c65a063310a"
+    },
+    {
+      "path": "TaskFlow.Infra/Persistence/Repositories/Identity",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "87787b0ce84b656743397f1a0d951a7d753c1d76",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/87787b0ce84b656743397f1a0d951a7d753c1d76"
+    },
+    {
+      "path": "TaskFlow.Infra/Persistence/Repositories/Identity/User",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "61a85aed027c2f4238fb6b5793c5ee1fdc778c56",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/61a85aed027c2f4238fb6b5793c5ee1fdc778c56"
+    },
+    {
+      "path": "TaskFlow.Infra/Persistence/Repositories/Identity/User/UserRepository.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c1dad559b63dbc379104ad5192c401d21970a247",
+      "size": 3675,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/c1dad559b63dbc379104ad5192c401d21970a247"
+    },
+    {
+      "path": "TaskFlow.Infra/Persistence/Repositories/Organizations",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b47caa2d067dddf838c71dece1a8436d9108b7c8",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/b47caa2d067dddf838c71dece1a8436d9108b7c8"
+    },
+    {
+      "path": "TaskFlow.Infra/Persistence/Repositories/Organizations/OrganizationInvitationRepository.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d59f613eadb94261ab91d489e6e1617557a03fe9",
+      "size": 3153,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/d59f613eadb94261ab91d489e6e1617557a03fe9"
+    },
+    {
+      "path": "TaskFlow.Infra/Persistence/Repositories/Organizations/OrganizationMemberRepository.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2fc77462f50a2ef61cacfc244ecc0bc3f6d14ce6",
+      "size": 3633,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/2fc77462f50a2ef61cacfc244ecc0bc3f6d14ce6"
+    },
+    {
+      "path": "TaskFlow.Infra/Persistence/Repositories/Organizations/OrganizationRepository.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "23bc77b2b10e476223dbe6e267fcf551ea6aadf5",
+      "size": 4208,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/23bc77b2b10e476223dbe6e267fcf551ea6aadf5"
+    },
+    {
+      "path": "TaskFlow.Infra/Persistence/Repositories/Organizations/OrganizationRoleRepository.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ba3097871782fdf0e8349dfe43fbf25cf5c4324",
+      "size": 3126,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/9ba3097871782fdf0e8349dfe43fbf25cf5c4324"
+    },
+    {
+      "path": "TaskFlow.Infra/Persistence/Repositories/WorkManagement",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9e0be30bb6a4908c96c87f423935ba663a703b04",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/9e0be30bb6a4908c96c87f423935ba663a703b04"
+    },
+    {
+      "path": "TaskFlow.Infra/Persistence/Repositories/WorkManagement/ProjectRepository.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "68c6511e812de0ec9fd9638dc13887a8861f054c",
+      "size": 3372,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/68c6511e812de0ec9fd9638dc13887a8861f054c"
+    },
+    {
+      "path": "TaskFlow.Infra/Persistence/Repositories/WorkManagement/SubTaskRepository.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a5e49befe5f640382dd78f53c12d906ad2acf7c9",
+      "size": 2487,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/a5e49befe5f640382dd78f53c12d906ad2acf7c9"
+    },
+    {
+      "path": "TaskFlow.Infra/Persistence/Repositories/WorkManagement/TaskRepository.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a61f277c96f5a096df94245fde661801336e690",
+      "size": 3279,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/5a61f277c96f5a096df94245fde661801336e690"
+    },
+    {
+      "path": "TaskFlow.Infra/Persistence/UnitOfWork.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "308d8a4efbf042fb4e2f49e152b29e88e425bfe9",
+      "size": 590,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/308d8a4efbf042fb4e2f49e152b29e88e425bfe9"
+    },
+    {
+      "path": "TaskFlow.Infra/Security",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2c1ebdf1c03ddf068b9e9eda907c5466d13060ca",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/2c1ebdf1c03ddf068b9e9eda907c5466d13060ca"
+    },
+    {
+      "path": "TaskFlow.Infra/Security/JwtProvider.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0a481ebc26dcaceb36777d218959be9ef1a5936e",
+      "size": 1568,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/0a481ebc26dcaceb36777d218959be9ef1a5936e"
+    },
+    {
+      "path": "TaskFlow.Infra/Security/JwtSettings.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "325861bb99592b0414916e8d3f4c10899465ebed",
+      "size": 446,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/325861bb99592b0414916e8d3f4c10899465ebed"
+    },
+    {
+      "path": "TaskFlow.Infra/Security/PasswordHasher.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd9e28a0787ed5fcd64cbcfad14dda72f56beffd",
+      "size": 755,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/cd9e28a0787ed5fcd64cbcfad14dda72f56beffd"
+    },
+    {
+      "path": "TaskFlow.Infra/Seeder",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e0d215d07e6a0c7177d3cda711ed5de6eeee7ca3",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/e0d215d07e6a0c7177d3cda711ed5de6eeee7ca3"
+    },
+    {
+      "path": "TaskFlow.Infra/Seeder/Identity",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "67dca04d2b26eb39203caeb991860eb462f81e9c",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/67dca04d2b26eb39203caeb991860eb462f81e9c"
+    },
+    {
+      "path": "TaskFlow.Infra/Seeder/Identity/User",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e8d4fb95785b2b9e1033ad730ff8e80a945fdd52",
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/trees/e8d4fb95785b2b9e1033ad730ff8e80a945fdd52"
+    },
+    {
+      "path": "TaskFlow.Infra/Seeder/Identity/User/UserSeader.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a1220e60db5b123926d5e7d2c865034f89ae2f8e",
+      "size": 1000,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/a1220e60db5b123926d5e7d2c865034f89ae2f8e"
+    },
+    {
+      "path": "TaskFlow.Infra/TaskFlow.Infra.csproj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "231186caf55850911937eb325869febf2a736cb6",
+      "size": 2244,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/231186caf55850911937eb325869febf2a736cb6"
+    },
+    {
+      "path": "TaskFlow.slnx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf9782b9c33679da9429ba1437b1d8fb338cdaeb",
+      "size": 265,
+      "url": "https://api.github.com/repos/kashyap369/TaskFlow-CleanArchitecture-API/git/blobs/bf9782b9c33679da9429ba1437b1d8fb338cdaeb"
+    }
+  ],
+  "truncated": false
+}

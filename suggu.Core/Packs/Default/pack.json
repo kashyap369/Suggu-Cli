@@ -1,0 +1,81 @@
+{
+  // The default clean-architecture pack. The engine is generic; this file is law.
+  // Add a generator entry + template here to create a new "suggu add <name>" command — no C# changes.
+  "schemaVersion": "1",
+  "name": "clean-webapi",
+  "description": "Clean architecture Web API (CQRS, DDD) — the owner's house style.",
+  "layers": [
+    { "name": "Domain",         "projectPatterns": [ "*.Domain" ] },
+    { "name": "Application",    "projectPatterns": [ "*.Application" ] },
+    { "name": "Infrastructure", "projectPatterns": [ "*.Infrastructure", "*.Infra" ] },
+    { "name": "Api",            "projectPatterns": [ "*.Api" ] }
+  ],
+  "generators": [
+    {
+      "name": "entity",
+      "description": "Create a domain entity under Entities/",
+      "layer": "Domain",
+      "outputs": [
+        { "pathPattern": "Entities/{Parent}/{Name}.cs", "template": "templates/Domain/entity.txt" }
+      ]
+    },
+    {
+      "name": "enum",
+      "description": "Create a domain enum under Enums/",
+      "layer": "Domain",
+      "outputs": [
+        { "pathPattern": "Enums/{Parent}/{Name}.cs", "template": "templates/Domain/enum.txt" }
+      ]
+    },
+    {
+      "name": "valueobject",
+      "description": "Create a value object under ValueObjects/",
+      "layer": "Domain",
+      "outputs": [
+        { "pathPattern": "ValueObjects/{Parent}/{Name}.cs", "template": "templates/Domain/valueobject.txt" }
+      ]
+    },
+    {
+      "name": "exception",
+      "description": "Create a domain exception under Exceptions/",
+      "layer": "Domain",
+      "outputs": [
+        { "pathPattern": "Exceptions/{Parent}/{Name}.cs", "template": "templates/Domain/exception.txt" }
+      ]
+    },
+    {
+      "name": "repositories",
+      "description": "Scan Entities/** and generate mirrored repository interfaces",
+      "layer": "Domain",
+      "mode": "entityScan",
+      "sharedOutputs": [
+        { "pathPattern": "Interfaces/IRepository.cs", "template": "templates/Domain/repositoryBase.txt" }
+      ],
+      "outputs": [
+        { "pathPattern": "Interfaces/{Parent}/I{Name}Repository.cs", "template": "templates/Domain/repositoryInterface.txt" }
+      ]
+    }
+  ],
+  "seeds": [
+    {
+      "layer": "Domain",
+      "section": "common",
+      "description": "Base entity types shared by the whole domain layer",
+      "outputs": [
+        { "pathPattern": "Common/BaseEntity.cs",      "template": "templates/Domain/Common/BaseEntity.txt" },
+        { "pathPattern": "Common/AuditableEntity.cs", "template": "templates/Domain/Common/AuditableEntity.txt" },
+        { "pathPattern": "Common/IAggregateRoot.cs",  "template": "templates/Domain/Common/IAggregateRoot.txt" },
+        { "pathPattern": "Common/Result.cs",          "template": "templates/Domain/Common/Result.txt" }
+      ]
+    },
+    {
+      "layer": "Domain",
+      "section": "domainevents",
+      "description": "Domain event contract + base class (BaseEntity depends on these)",
+      "outputs": [
+        { "pathPattern": "DomainEvents/IDomainEvent.cs", "template": "templates/Domain/DomainEvents/IDomainEvent.txt" },
+        { "pathPattern": "DomainEvents/DomainEvent.cs",  "template": "templates/Domain/DomainEvents/DomainEvent.txt" }
+      ]
+    }
+  ]
+}

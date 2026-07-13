@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="suggu.Cli/suggu.Cli.csproj" />
+  <Project Path="suggu.Core/suggu.Core.csproj" />
+  <Project Path="suggu.Tests/suggu.Tests.csproj" />
+</Solution>

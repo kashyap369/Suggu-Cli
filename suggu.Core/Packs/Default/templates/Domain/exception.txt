@@ -1,0 +1,18 @@
+namespace {Namespace};
+
+public class {Name} : Exception
+{
+    public {Name}()
+    {
+    }
+
+    public {Name}(string message)
+        : base(message)
+    {
+    }
+
+    public {Name}(string message, Exception innerException)
+        : base(message, innerException)
+    {
+    }
+}
