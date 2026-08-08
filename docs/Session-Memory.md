@@ -17,8 +17,8 @@ Do not restore Clean Architecture packs, fixed layer rules, entity/repository ge
 ## Baseline recorded 2026-08-08
 
 - Target framework: .NET 10.
-- Global tool package version: `0.4.0` after guided add commands and comprehensive `project info` reporting.
-- Automated tests before final docs: 52 passed, 0 failed.
+- Global tool package version: `0.5.2` after extending declarative rulebooks to bootstrap empty workspaces and normalizing project-template package versions for central package management.
+- Automated tests before final docs: 58 passed, 0 failed.
 - Full build: 0 warnings, 0 errors.
 - Release package `nupkg/suggu.0.3.0.nupkg` was built, the previous global `suggu` installation was uninstalled, and this local package was installed globally and verified with `suggu --version` on 2026-08-08.
 - Release package `nupkg/suggu.0.3.1.nupkg` was then built and the global tool was updated from `0.3.0` to `0.3.1`; installed help verifies `add library`.
@@ -29,5 +29,8 @@ Do not restore Clean Architecture packs, fixed layer rules, entity/repository ge
 - Release package `nupkg/suggu.0.3.6.nupkg` was built and the global tool was updated from `0.3.5` to `0.3.6`. Installed `suggu create project console 10 --name SugguConsoleSmoke --no-sln --dry-run` was verified and wrote no files.
 - Release package `nupkg/suggu.0.3.7.nupkg` was built and the global tool was updated from `0.3.6` to `0.3.7`. Bare `create project` adds arrow-key project-type/framework selection, validates explicit targets against the active SDK template, and offers to open successful creations through the system-associated IDE. PTY dry-run verified Console + `net9.0`; installed version/help were verified, and no project or IDE was created/opened during checks.
 - Release package `nupkg/suggu.0.4.0.nupkg` was built and the global tool was updated from `0.3.7` to `0.4.0`. It adds guided class/interface/controller/JSON creation with project-relative paths, library framework recommendation/selection, and the source-focused `project info` report. Installed reporting was verified read-only against Portfolio, including inherited `net10.0` targets and central package versions; PTY/dry-run checks created no artifacts.
+- Release package `nupkg/suggu.0.5.0.nupkg` was built and the global tool was updated from `0.4.0` to `0.5.0`. It adds `create rulebook` and safe custom composite commands through `--rulebook`/`rb`. An isolated solution smoke test validated, dry-ran, and executed `add entity Book`, producing entity, repository-interface, and configuration files; the temporary solution was removed. Installed version and `create rulebook --dry-run` were verified.
+- Release package `nupkg/suggu.0.5.2.nupkg` was built and globally installed. Its empty-workspace rulebook bootstrap was verified under `D:\testGroundSuggu` against the PortfolioBackend architecture: 8 projects were generated through the rulebook, the solution built with 0 warnings/errors, all 4 smoke tests passed, installed `check build` succeeded, and a final idempotency run reported 0 created/overwritten/deleted/failed operations.
+- `README.md` now includes an end-to-end rulebook guide covering existing and empty workspaces, discovery/invocation, schema structure, repeatable artifact workflows, full solution bootstrap, every v1 action, parameters/templates/placeholders, central packages, safety/idempotency, and troubleshooting.
 - Version `0.4.0` is prepared for repository publication; use Git history as the source of truth for the resulting commits and push.
 - Dry-run and temporary smoke artifacts were verified absent/removed after checks.

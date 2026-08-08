@@ -79,3 +79,15 @@ public sealed record AddFrameworkReferenceOperation(string ProjectPath, string F
 {
     public override string TargetPath => ProjectPath;
 }
+
+/// <summary>
+/// Structured csproj edit: add a NuGet PackageReference without invoking a shell.
+/// A null version is useful when Directory.Packages.props owns package versions.
+/// </summary>
+public sealed record AddPackageReferenceOperation(
+    string ProjectPath,
+    string PackageName,
+    string? Version = null) : Operation
+{
+    public override string TargetPath => $"{System.IO.Path.GetFileNameWithoutExtension(ProjectPath)} → {PackageName}";
+}

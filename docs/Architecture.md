@@ -30,10 +30,13 @@ There are no architecture-profile or fixed layer-name assumptions. The word “l
 - `ProjectInspector` reads ordinary projects/packages and detects ASP.NET Core Web projects.
 - `SolutionInfoInspector` aggregates frameworks, references, packages, source-focused sizes, latest changes, and a filtered source tree for `project info`; `ProjectInspector` resolves standard `Directory.Build.props` framework inheritance and `Directory.Packages.props` central versions.
 - `ReferenceInspector`, `BuildInspector`, and `EndpointFlowInspector` provide solution diagnostics.
+- `RulebookLoader` reads the marked JSON definition from `docs/SUGGU-RULEBOOK.md`; `RulebookPlanner` composes allowlisted built-in planners/operations into one validated plan. It maintains a virtual project catalog so later actions can safely target projects created earlier in the same bootstrap recipe. `RulebookCommandRunner` resolves the workspace from the rulebook location and provides explicit dynamic-command routing without altering the built-in Spectre command tree.
 
 ## Safety model
 
 Existing generated source is skipped unless `--force` is explicit. Filesystem deletion is isolated under `remove file` and `remove folder`; creation commands never delete. Removal reports that Suggu cannot recover data, and folder removal refuses filesystem roots or the selected parent itself. Reference removal remains an explicit `add references --remove` operation, edits XML structurally, and skips absent references.
+
+Rulebooks are declarative data, not scripts. They may compose only allowlisted Suggu operations, cannot launch shell commands, cannot escape the rulebook workspace or selected project roots, and are fully planned before execution. Package additions are structured XML operations; project/solution creation uses fixed `dotnet new` templates through the shared plan executor.
 
 ## Flow and preview limitations
 

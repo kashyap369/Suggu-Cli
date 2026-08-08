@@ -22,11 +22,15 @@ Status recorded on 2026-08-08.
 - Endpoint flow output now suppresses unresolved framework/package/local noise, excludes test-project files, and resolves common Dapper row, LINQ lambda, local-variable, DTO mapper, and type-alias links.
 - Endpoint flow discovery is independent of solution folder/layer conventions, supports concrete as well as interface dependencies and non-underscore fields, and locates actions across partial controller files.
 - `grep --file` provides case-insensitive full-filename or extensionless stem search, optional path/solution scope, interactive duplicate selection, text preview, and binary-path fallback.
+- `create rulebook` generates a documented `docs/SUGGU-RULEBOOK.md`; explicit `--rulebook`/`rb` mode validates and executes project-specific composite commands through existing safe planners.
+- Rulebook v1 supports project aliases, parameters, ordered built-in actions, optional templates/placeholders, list/help/check, dry-run/force, duplicate-output detection, and project-root path containment without shell execution.
+- Rulebooks can bootstrap empty workspaces with solutions, Web API/MVC/console/class-library/xUnit projects, workspace files, structured package references, project references, and project folder trees in one plan.
 
 ## Verification baseline
 
 - Solution build: 0 warnings and 0 errors.
-- Automated tests: 52 passed, 0 failed after comprehensive solution-info inspection coverage.
+- Automated tests: 58 passed, 0 failed after empty-workspace bootstrap planning, structured package editing/idempotency/central-version normalization, future-project dry-run, and prior rulebook coverage.
+- Installed `suggu 0.5.2` bootstrapped `D:\testGroundSuggu` from a rulebook modeled on PortfolioBackend: 8 projects, central packages, expected references/folders, and 4 smoke-test projects. The generated solution built with 0 warnings/errors, all 4 tests passed, `check build` succeeded, and a repeat recipe run made 0 changes.
 - Smoke checks passed for categorized help, both project-creation grammars, multiple add-reference dry run, reference filtering, solution find, readable grep preview, folder `.gitignore`, depth overview, dedicated `remove file`, dedicated recursive `remove folder`, and class/interface dry runs.
 
 ## Future work

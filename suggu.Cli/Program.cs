@@ -21,6 +21,13 @@ if (args is ["help"])
     args = ["--help"];
 }
 
+// Explicit rulebook mode routes project-specific commands without adding them
+// to Suggu's built-in command tree.
+if (args.Length > 0 && args[0] is "--rulebook" or "-rb" or "rb" or "rulebook")
+{
+    return RulebookCommandRunner.Run(args[1..]);
+}
+
 var app = new CommandApp();
 app.Configure(config =>
 {

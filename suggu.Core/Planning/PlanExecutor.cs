@@ -49,6 +49,7 @@ public sealed class PlanExecutor
                 AddReferenceOperation reference => ApplyAddReference(reference, options),
                 RemoveReferenceOperation reference => ApplyRemoveReference(reference, options),
                 AddFrameworkReferenceOperation frameworkRef => ApplyAddFrameworkReference(frameworkRef, options),
+                AddPackageReferenceOperation packageRef => ApplyAddPackageReference(packageRef, options),
                 _ => new OperationResult(operation, OperationStatus.Failed, $"unknown operation type {operation.GetType().Name}"),
             };
         }
@@ -205,7 +206,10 @@ public sealed class PlanExecutor
     {
         if (!File.Exists(op.ProjectPath))
         {
-            return new OperationResult(op, OperationStatus.Failed, $"project not found: {op.ProjectPath}");
+            // Dry-run: both projects can be created earlier in the same combined plan.
+            return options.DryRun
+                ? new OperationResult(op, OperationStatus.Created)
+                : new OperationResult(op, OperationStatus.Failed, $"project not found: {op.ProjectPath}");
         }
 
         // Idempotency: the csproj already references a project with this file name.
@@ -256,6 +260,65 @@ public sealed class PlanExecutor
                     new System.Xml.Linq.XAttribute("Include", op.FrameworkName)));
             doc.Root!.Add(itemGroup);
             doc.Save(op.ProjectPath);
+        }
+
+        return new OperationResult(op, OperationStatus.Created);
+    }
+
+    private static OperationResult ApplyAddPackageReference(AddPackageReferenceOperation op, ExecutionOptions options)
+    {
+        if (!File.Exists(op.ProjectPath))
+        {
+            // Dry-run: the project can be created by an earlier operation in the same plan.
+            return options.DryRun
+                ? new OperationResult(op, OperationStatus.Created)
+                : new OperationResult(op, OperationStatus.Failed, "project file not found");
+        }
+
+        var document = System.Xml.Linq.XDocument.Load(op.ProjectPath);
+        var existing = document.Descendants("PackageReference")
+            .FirstOrDefault(element => string.Equals(
+                (string?)element.Attribute("Include"), op.PackageName, StringComparison.OrdinalIgnoreCase));
+        if (existing is not null)
+        {
+            var versionAttribute = existing.Attribute("Version");
+            var versionElements = existing.Elements()
+                .Where(element => element.Name.LocalName == "Version")
+                .ToList();
+            var currentVersion = (string?)versionAttribute ?? versionElements.FirstOrDefault()?.Value;
+            var requestedVersion = string.IsNullOrWhiteSpace(op.Version) ? null : op.Version;
+            if (string.Equals(currentVersion, requestedVersion, StringComparison.OrdinalIgnoreCase))
+            {
+                return new OperationResult(op, OperationStatus.Skipped, "package reference already present");
+            }
+
+            if (!options.DryRun)
+            {
+                versionAttribute?.Remove();
+                foreach (var element in versionElements) element.Remove();
+                if (requestedVersion is not null)
+                {
+                    existing.Add(new System.Xml.Linq.XAttribute("Version", requestedVersion));
+                }
+                document.Save(op.ProjectPath);
+            }
+
+            return new OperationResult(op, OperationStatus.Overwritten,
+                requestedVersion is null ? "package now uses central version" : "package version updated");
+        }
+
+        if (!options.DryRun)
+        {
+            var reference = new System.Xml.Linq.XElement("PackageReference",
+                new System.Xml.Linq.XAttribute("Include", op.PackageName));
+            if (!string.IsNullOrWhiteSpace(op.Version))
+            {
+                reference.Add(new System.Xml.Linq.XAttribute("Version", op.Version));
+            }
+
+            var itemGroup = new System.Xml.Linq.XElement("ItemGroup", reference);
+            document.Root!.Add(itemGroup);
+            document.Save(op.ProjectPath);
         }
 
         return new OperationResult(op, OperationStatus.Created);

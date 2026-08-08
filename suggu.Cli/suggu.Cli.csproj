@@ -12,7 +12,7 @@
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>suggu</ToolCommandName>
     <PackageId>suggu</PackageId>
-    <Version>0.4.0</Version>
+    <Version>0.5.2</Version>
     <Authors>Shubham</Authors>
     <Description>Global file-system and .NET productivity CLI for scaffolding, inspection, build diagnostics, and endpoint flow tracing.</Description>
     <PackageOutputPath>$(MSBuildThisFileDirectory)..\nupkg</PackageOutputPath>

@@ -14,6 +14,7 @@ internal static class CommonCommandsModule
             create.AddCommand<CreateFolderCommand>("folder").WithDescription("Create folders and seed each with .gitignore");
             create.AddCommand<CreateFileCommand>("file").WithDescription("Create files of any type");
             create.AddCommand<CreateProjectCommand>("project").WithDescription("Create an SDK Web API, MVC, or console project");
+            create.AddCommand<CreateRulebookCommand>("rulebook").WithDescription("Create docs/SUGGU-RULEBOOK.md for project-specific commands");
         });
 
         config.AddCategorizedBranch("add", CommandCategories.Dotnet, add =>
@@ -46,6 +47,8 @@ internal static class CommonCommandsModule
             .WithDescription("Find a file or folder below a directory or solution root");
         config.AddCategorizedCommand<GrepFileCommand>("grep", CommandCategories.Dotnet)
             .WithDescription("Locate a solution file and preview readable content");
+        config.AddCategorizedCommand<RulebookHelpCommand>("rulebook", CommandCategories.Dotnet)
+            .WithDescription("List and run project-specific commands from docs/SUGGU-RULEBOOK.md");
         config.AddCategorizedBranch("project", CommandCategories.Dotnet, project =>
         {
             project.SetDescription("Inspect the enclosing .NET solution");
@@ -59,6 +62,7 @@ internal static class CommonCommandsModule
         CommandCategories.Assign("list folder", CommandCategories.General);
         CommandCategories.Assign("find", CommandCategories.General);
         CommandCategories.Assign("create project", CommandCategories.Dotnet);
+        CommandCategories.Assign("create rulebook", CommandCategories.Dotnet);
         CommandCategories.Assign("add class", CommandCategories.Dotnet);
         CommandCategories.Assign("add interface", CommandCategories.Dotnet);
         CommandCategories.Assign("add controller", CommandCategories.Dotnet);
@@ -68,6 +72,7 @@ internal static class CommonCommandsModule
         CommandCategories.Assign("add ref", CommandCategories.Dotnet);
         CommandCategories.Assign("list packages", CommandCategories.Dotnet);
         CommandCategories.Assign("grep", CommandCategories.Dotnet);
+        CommandCategories.Assign("rulebook", CommandCategories.Dotnet);
         CommandCategories.Assign("project info", CommandCategories.Dotnet);
         return config;
     }

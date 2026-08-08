@@ -178,6 +178,27 @@ suggu project info [--max-depth <NUMBER>]
 - Render the solution's folder/file structure as a detailed tree with sizes; `--max-depth` limits tree display without changing complete totals.
 - Exclude generated/system folders (`bin`, `obj`, `.git`, `.vs`, `node_modules`, and `TestResults`) from the source-focused report.
 
+### Create and run a project rulebook
+
+```text
+suggu create rulebook [--force] [--dry-run]
+suggu --rulebook --check
+suggu --rulebook <CUSTOM_COMMAND> [VALUES...] [--dry-run] [--force]
+suggu rb <CUSTOM_COMMAND> [VALUES...] [--dry-run] [--force]
+```
+
+- `create rulebook` creates `docs/SUGGU-RULEBOOK.md` at the enclosing solution root, or at the explicit/current workspace when no solution exists, including commented guidance and an editable `add entity` example.
+- Store the machine-readable `suggu/v1` definition in the marked JSON block while allowing ordinary Markdown notes outside it.
+- Resolve the rulebook by walking upward from the current directory.
+- Support multi-word custom commands, positional or `--Parameter value` inputs, command help/listing, and whole-rulebook validation through `--check`.
+- Compile every recipe into one combined `Plan` and execute through the existing `PlanExecutor`, preserving normal dry-run, force, idempotency, and reporting behavior.
+- Support only allowlisted structured actions in v1: `create solution`, `create project`, `create folder`, `create file`, `add class`, `add interface`, `add controller`, `add json`, `add reference`, and `add package`.
+- Allow one recipe to bootstrap an empty workspace with a solution and Web API, MVC, console, class-library, or xUnit projects. Later actions in the same plan may target projects declared by project-creation actions.
+- Allow folder/file/JSON actions without a project to target the rulebook workspace; keep these paths within the workspace root.
+- Add package references through structured project XML edits. An omitted package version supports centrally managed versions in `Directory.Packages.props` and removes an explicit version emitted by a project template.
+- Allow rulebook project aliases, ordered actions, reusable line-array templates, and placeholders for inputs plus `Namespace`, `TypeName`, `ProjectName`, and `SolutionName`.
+- Keep every relative action path inside its selected project, reject duplicate output files and invalid identifiers, and never execute arbitrary shell commands.
+
 ### Trace endpoint flow
 
 ```text
