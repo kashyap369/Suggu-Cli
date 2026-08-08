@@ -1,243 +1,278 @@
-# suggu
+# Suggu CLI
 
-> Deterministic scaffolding and verification CLI for .NET clean-architecture projects.
-> **suggu owns the deterministic 90%; the AI fills the semantic 10%.**
+Suggu is a global .NET productivity tool for filesystem work and ordinary .NET solutions. It creates and inspects projects, source artifacts, references, builds, endpoint flows, packages, and folder structures without assuming Clean Architecture or fixed layer names.
 
-`suggu` is a global .NET tool that creates projects, layers, folders, and clean-architecture
-scaffolds from a declarative **pack** — so your solution layout is generated the same way
-every single time, instead of being hand-typed or improvised by an AI.
+- Current version: `0.4.0`
+- Tool runtime: `.NET 10`
+- UI: `Spectre.Console`
 
----
+## Core rules
 
-## Why
+- General commands work from any directory.
+- .NET commands discover an enclosing `.sln`, `.slnx`, or `.csproj`.
+- Interactive terminals provide arrow-key project, project-type, and framework selection.
+- Source-artifact paths are relative to the selected project, such as `Features/Orders/Commands`; absolute drive paths are unnecessary.
+- Existing source files are preserved unless `--force` is explicit.
+- Creation commands never delete. Filesystem deletion exists only under `suggu remove`.
+- Suggu has no Domain/Application/Infrastructure naming requirement and no hard-coded architecture profile.
 
-Most project setup work is mechanical: create the library, add it to the solution, wire the
-project references, create `Entities/`, `Enums/`, `ValueObjects/`, drop in `BaseEntity`,
-`IAggregateRoot`, `Result`, mirror a repository interface for every entity. None of that
-needs judgement — it needs consistency.
+## Build and install
 
-`suggu` does that part deterministically. What's left (the actual business rules inside the
-entity, the handler logic) is where you — or an AI assistant — should be spending attention.
+Requirements:
 
----
-
-## Requirements
-
-- [.NET SDK 10.0](https://dotnet.microsoft.com/download) or newer
-
-Check with:
-
-```bash
-dotnet --version
-```
-
----
-
-## Installation
-
-### Option A — install from source (current)
+- .NET 10 SDK
+- Windows, Linux, or macOS terminal
 
 ```powershell
 git clone https://github.com/kashyap369/Suggu-Cli.git
-cd Suggu-Cli/suggu.Cli
-
-# Build the NuGet package (lands in ../nupkg by default)
-dotnet pack -c Release
-
-# Install it globally
-dotnet tool install --global suggu --add-source ../nupkg --no-cache
+cd Suggu-Cli
+dotnet restore SugguCli.slnx
+dotnet build SugguCli.slnx -c Release
+dotnet test SugguCli.slnx -c Release
+dotnet pack suggu.Cli/suggu.Cli.csproj -c Release -o nupkg
+dotnet tool install --global suggu --version 0.4.0 --add-source ./nupkg
 ```
 
-Verify:
-
-```bash
-suggu --version
-suggu --help
-```
-
-### Updating to a newer local build
+Update an existing installation:
 
 ```powershell
-cd Suggu-Cli/suggu.Cli
-dotnet pack -c Release
-dotnet tool update --global suggu --add-source ../nupkg --no-cache
+dotnet tool update --global suggu --version 0.4.0 --add-source ./nupkg
 ```
 
-### Uninstalling
+Verify or uninstall:
 
-```bash
+```powershell
+suggu --version
+suggu --help
 dotnet tool uninstall --global suggu
 ```
 
----
-
-## Troubleshooting the install
-
-**`Command 'suggu' conflicts with an existing command from another tool`**
-
-An older or differently-named package already owns the `suggu` shim. Find it and remove it:
+## Interactive project creation
 
 ```powershell
-dotnet tool list --global
+suggu create project
 ```
 
-Look for the row whose **Commands** column is `suggu`, take its **Package Id**, then:
+The wizard asks for:
+
+1. Project type: Web API, MVC, or Console.
+2. Project name.
+3. A target framework accepted by the active installed `dotnet new` template.
+4. Whether to open the completed solution/project in the system-associated IDE.
+
+Explicit forms remain supported:
 
 ```powershell
-dotnet tool uninstall --global <PackageIdFromThatRow>
-dotnet tool install --global suggu --add-source ../nupkg --no-cache
+suggu create project webapi 10 -n Shop.Api --controllers
+suggu create project mvc 10 -n Shop.Web -p ./src
+suggu create project console 9 -n Shop.Tools --no-sln
+suggu create project --type console --framework 10 --name Shop.Worker --open
 ```
 
-**`Unable to find package suggu`**
+Use `--dry-run` to preview project and solution operations.
 
-`--add-source` is pointing at a folder with no `.nupkg` in it. Confirm the package exists:
+## General commands
+
+### Create folders and files
 
 ```powershell
-dir ..\nupkg
+suggu create folder Logs Cache -p ./temp
+suggu create file notes.txt settings.json -p ./docs
 ```
 
-If it's empty, run `dotnet pack -c Release -o ../nupkg` and pass that same path to
-`--add-source`. Use an absolute path if the relative one is ambiguous.
+Created folders receive a `.gitignore`. File creation makes missing parent folders and skips existing files unless `--force` is supplied.
 
-**`suggu` not recognised after a successful install**
+### Remove folders and files
 
-The global tools folder isn't on your `PATH`. Add it:
-
-- Windows: `%USERPROFILE%\.dotnet\tools`
-- macOS / Linux: `$HOME/.dotnet/tools`
-
-Then open a new terminal.
-
----
-
-## Usage
-
-```bash
-suggu --help          # categorized command list
-suggu help            # same thing
-suggu -v              # version
+```powershell
+suggu remove folder Cache -p ./temp
+suggu remove file notes.txt settings.json -p ./docs
 ```
 
-### Common — files, folders, projects
+Folder removal is recursive. Suggu refuses filesystem-root or selected-parent removal and reports that removed data cannot be recovered.
 
-| Command | What it does |
-| --- | --- |
-| `suggu create folder <names...>` | Create one or more folders |
-| `suggu create file <names...>` | Create one or more files (any type) |
-| `suggu create library <name>` | Create a class library and add it to the solution |
-| `suggu create project <name>` | Create a Web API or MVC project, the way Visual Studio would |
-| `suggu create reference` | Add project-to-project references |
-| `suggu delete file <names...>` | Delete one or more files |
-| `suggu list folder` | List folders in a directory |
-| `suggu list packages` | List packages installed in a layer |
+### List folder details
 
-### Clean architecture — scaffolding
-
-| Command | What it does |
-| --- | --- |
-| `suggu setup <layer> [section]` | Create a layer's canonical folders + seed files from the pack |
-| `suggu add entity <Name>` | Domain entity under `Entities/` |
-| `suggu add enum <Name>` | Domain enum under `Enums/` |
-| `suggu add valueobject <Name>` | Value object under `ValueObjects/` |
-| `suggu add exception <Name>` | Domain exception under `Exceptions/` |
-| `suggu add repositories` | Scan `Entities/**` and generate mirrored repository interfaces |
-
-### Inspection
-
-| Command | What it does |
-| --- | --- |
-| `suggu info references` | Show which project references which, as a tree |
-| `suggu find useless` | Find empty folders worth cleaning up |
-
----
-
-## Example workflow
-
-```bash
-# 1. Lay down the layers
-suggu create library MyApp.Domain
-suggu create library MyApp.Application
-suggu create library MyApp.Infrastructure
-suggu create project MyApp.Api
-
-# 2. Wire them together
-suggu create reference
-
-# 3. Seed the domain layer with base types
-suggu setup Domain common
-suggu setup Domain domainevents
-
-# 4. Scaffold your model
-suggu add entity Order
-suggu add entity Customer
-suggu add valueobject Money
-suggu add enum OrderStatus
-
-# 5. Generate a repository interface for every entity
-suggu add repositories
-
-# 6. Sanity check
-suggu info references
+```powershell
+suggu list folder
+suggu list folder -p ./src --depth
+suggu list folder --depth --max-depth 3
 ```
 
----
+The depth view shows a tree, file/folder totals, sizes, extension summaries, and per-folder details.
 
-## Packs — how the commands are defined
+### Find files or folders
 
-`suggu` is driven by a **pack** (`suggu.Core/Packs/Default/pack.json`) plus a folder of
-templates. The pack declares:
-
-- **layers** — how project names map to layers (`*.Domain`, `*.Application`, `*.Infrastructure`, `*.Api`)
-- **generators** — each entry automatically becomes a `suggu add <name>` command
-- **seeds** — each entry becomes a `suggu setup <layer> <section>` section
-
-Adding a new scaffold means adding a generator entry and a template file. **No C# changes
-required** — the command tree is built from the pack at startup.
-
-The default pack is `clean-webapi`: a clean-architecture Web API with CQRS and DDD conventions.
-
----
-
-## Project structure
-
-```
-Suggu-Cli/
-├── suggu.Cli/                  # Spectre.Console.Cli front-end (commands, help, rendering)
-│   ├── Commands/
-│   │   ├── Common/             # create / delete / list
-│   │   ├── CleanArchitecture/  # add / setup — built from the pack
-│   │   └── Inspection/         # find / info
-│   └── Infrastructure/         # categorized help provider, report renderer
-├── suggu.Core/                 # the engine — no UI concerns
-│   ├── Generation/             # planners, template renderer, entity scanner
-│   ├── Packs/                  # pack loader, models, Default pack + templates
-│   ├── Planning/               # Plan → PlanExecutor → ExecutionReport
-│   ├── Inspection/             # layer, reference and environment inspectors
-│   └── Workspace/              # solution locator, layer resolver
-├── suggu.Tests/                # unit tests
-└── docs/                       # design plan and notes
+```powershell
+suggu find --file Controller
+suggu find --folder Features -p ./src
+suggu find --file "*.json" --sln-search
 ```
 
-### Design notes
+Search is recursive and case-insensitive. Partial names and `*`/`?` wildcards are supported.
 
-- **Plan, then execute.** Commands build a `Plan` of operations; `PlanExecutor` runs it and
-  returns an `ExecutionReport`. Nothing touches disk mid-decision.
-- **Core knows nothing about the console.** All rendering lives in `suggu.Cli`.
-- **The pack is law.** Layout conventions live in JSON, not scattered across command classes.
+## .NET solution and project commands
 
----
+### Guided source creation
 
-## Building and testing
-
-```bash
-git clone https://github.com/kashyap369/Suggu-Cli.git
-cd Suggu-Cli
-
-dotnet build
-dotnet test
+```powershell
+suggu add class
+suggu add interface
+suggu add controller
+suggu add json
 ```
 
----
+When arguments are omitted, Suggu prompts for a name, shows project/layer choices with arrow keys, and asks for a folder relative to the selected project. Examples:
+
+```text
+Features/Orders/Commands
+Contracts/Payments
+Controllers/Admin
+Configuration/Seed
+```
+
+Explicit commands:
+
+```powershell
+suggu add class CreateOrderHandler -l Application -p Features/Orders/Commands
+suggu add interface OrderService -l Application -p Contracts/Orders
+suggu add controller Orders -t api -l Api -p Controllers/V1
+suggu add json seed-data -l Infra -p Configuration/Seed
+```
+
+Interfaces receive the conventional `I` prefix. C# namespaces come from the selected project's root namespace and folder. JSON names receive `.json` when omitted.
+
+### Add a class library
+
+```powershell
+suggu add library
+suggu add library Shop.Shared -f 10
+suggu add library Shop.Web.Shared --aspnet --dry-run
+```
+
+The interactive framework selector uses the active class-library template and marks the current project's framework—or the solution's most common framework—as recommended. The new library is added to the solution.
+
+### Add or remove references
+
+```powershell
+suggu add references --from Shop.Api --to Shop.Application
+suggu add references --from Shop.Api --to Shop.Application --to Shop.Infrastructure
+suggu add ref --from Shop.Api --to Shop.Infrastructure --remove
+```
+
+`--from` receives each reference. Repeat `--to` or use comma-separated targets. Self-references and duplicates are prevented; `--dry-run` is supported.
+
+### Inspect the complete solution
+
+```powershell
+suggu project info
+suggu project info --max-depth 4
+```
+
+The Spectre report includes:
+
+- Solution path, project/layer count, source size, and file/folder totals.
+- Target framework, size, and latest changed file for every project.
+- Project-reference dependency trees.
+- NuGet packages and versions for every project.
+- Frameworks inherited from `Directory.Build.props`.
+- Versions managed through `Directory.Packages.props`.
+- A folder/file tree with sizes.
+
+Generated/system folders such as `.git`, `.vs`, `bin`, `obj`, `node_modules`, and `TestResults` are excluded from this source-focused report.
+
+### Check references and builds
+
+```powershell
+suggu check references
+suggu check ref --layer Application
+suggu check build
+suggu check build --project ./src/Shop.Api/Shop.Api.csproj
+suggu check build --no-restore
+```
+
+Reference inspection shows direct/transitive dependencies, missing targets, and cycles. Build inspection renders compiler/MSBuild diagnostics with file, line, code, and message.
+
+### Trace an endpoint flow
+
+```powershell
+suggu check flow --controller Orders --method GetById
+```
+
+The tracer follows source-resolvable calls from a controller action through services, handlers, repositories, DTO mapping, and common MediatR dispatch. It is independent of project names and folder architecture and reports connected source files and line numbers.
+
+This is conservative static analysis, not runtime tracing. Framework/package calls are omitted; middleware, filters, reflection, runtime DI decorators, and dynamic dispatch may add runtime steps that source inspection cannot prove.
+
+### Locate and preview a solution file
+
+```powershell
+suggu grep -f BlogPostController
+suggu grep -f blogpostcontroller.cs
+suggu grep -f settings -p ./src
+```
+
+The extension is optional and matching is case-insensitive. Without `--path`, Suggu searches the enclosing solution. Multiple matches use an arrow-key selector. Readable files are previewed with line numbers; binary files return an absolute viewer path.
+
+### List packages
+
+```powershell
+suggu list packages
+suggu list packages --project Application
+```
+
+## Command reference
+
+| Category | Command | Purpose |
+| --- | --- | --- |
+| General | `create folder` | Create folders and seed `.gitignore` |
+| General | `create file` | Create arbitrary files |
+| General | `remove folder` | Recursively remove folders |
+| General | `remove file` | Remove files |
+| General | `list folder` | Show folder trees, counts, types, and sizes |
+| General | `find` | Recursively find files or folders |
+| .NET | `create project` | Create Web API, MVC, or Console projects |
+| .NET | `add class` | Add a namespaced class |
+| .NET | `add interface` | Add a namespaced interface |
+| .NET | `add controller` | Add an API or MVC controller |
+| .NET | `add json` | Add a JSON file to a selected project |
+| .NET | `add library` | Add a class library to the solution |
+| .NET | `add references` / `add ref` | Add or remove project references |
+| .NET | `project info` | Show frameworks, dependencies, packages, sizes, changes, and structure |
+| .NET | `check references` / `check ref` | Show reference order |
+| .NET | `check build` | Build and explain diagnostics |
+| .NET | `check flow` | Trace connected endpoint source |
+| .NET | `grep` | Locate and preview a solution file |
+| .NET | `list packages` | List project packages |
+
+Run `suggu <command> --help` for every option.
+
+## Safety rules
+
+1. General commands never require a .NET solution.
+2. .NET commands discover `.sln`, `.slnx`, and `.csproj` context by walking upward.
+3. Relative artifact paths resolve from the selected project root.
+4. Existing files are skipped unless `--force` is explicit.
+5. Creation commands never delete; deletion is isolated under `remove`.
+6. Reference removal requires explicit `--remove`.
+7. Use `--dry-run` to preview supported mutations.
+8. Static flow analysis cannot guarantee runtime-only behavior.
+
+## Repository structure
+
+```text
+suggu.Cli/    Command grammar, interactive UI, validation, and rendering
+suggu.Core/   Discovery, planning, execution, generation, and inspection
+suggu.Tests/  Automated Core behavior tests
+docs/         Architecture, requirements, status, and session memory
+```
+
+Development validation:
+
+```powershell
+dotnet format SugguCli.slnx --verify-no-changes --no-restore
+dotnet build SugguCli.slnx --no-restore
+dotnet test SugguCli.slnx --no-restore
+```
 
 ## Author
 
