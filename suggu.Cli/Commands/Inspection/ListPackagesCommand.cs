@@ -10,59 +10,54 @@ internal sealed class ListPackagesCommand : Command<ListPackagesCommand.Settings
 {
     public sealed class Settings : CommandSettings
     {
-        [CommandOption("-l|--layer <LAYER>")]
-        [Description("Layer/project name, case-insensitive (e.g. Cli). Defaults to the current layer.")]
-        public string? Layer { get; init; }
+        [CommandOption("-p|--project <PROJECT>")]
+        [Description("Project name, case-insensitive. Defaults to the current project.")]
+        public string? Project { get; init; }
     }
 
     protected override int Execute(CommandContext context, Settings settings, CancellationToken cancellationToken)
     {
         var cwd = Directory.GetCurrentDirectory();
-
         var solutionRoot = SolutionLocator.FindSolutionRoot(cwd);
         if (solutionRoot is null)
         {
-            AnsiConsole.MarkupLine("[red]✗[/] no .sln or .slnx found — run this inside a solution");
+            AnsiConsole.MarkupLine("[red]x[/] no .sln or .slnx found - run this inside a solution");
             return 1;
         }
 
-        ProjectLayer? layer;
-        if (string.IsNullOrWhiteSpace(settings.Layer))
+        DotnetProject? project;
+        if (string.IsNullOrWhiteSpace(settings.Project))
         {
-            // No layer given: use the project the command is running inside.
-            layer = LayerInspector.GetCurrentLayer(cwd);
-            if (layer is null)
+            project = ProjectInspector.GetCurrentProject(cwd);
+            if (project is null)
             {
-                AnsiConsole.MarkupLine("[red]✗[/] not inside a project — pass --layer <name>");
+                AnsiConsole.MarkupLine("[red]x[/] not inside a project - pass --project <name>");
                 return 1;
             }
         }
         else
         {
-            layer = LayerInspector.FindLayer(solutionRoot, settings.Layer);
-            if (layer is null)
+            project = ProjectInspector.FindProject(solutionRoot, settings.Project);
+            if (project is null)
             {
-                var available = string.Join(", ", LayerInspector.GetLayers(solutionRoot).Select(l => l.Name));
-                AnsiConsole.MarkupLine($"[red]✗[/] layer '{Markup.Escape(settings.Layer)}' not found. Available: {Markup.Escape(available)}");
+                var available = string.Join(", ", ProjectInspector.GetProjects(solutionRoot).Select(item => item.Name));
+                AnsiConsole.MarkupLine($"[red]x[/] project '{Markup.Escape(settings.Project)}' not found. Available: {Markup.Escape(available)}");
                 return 1;
             }
         }
 
-        var packages = LayerInspector.GetPackages(layer.ProjectPath);
-
-        AnsiConsole.MarkupLine($"[bold]Layer:[/] [green]{Markup.Escape(layer.Name)}[/]");
-
+        var packages = ProjectInspector.GetPackages(project.ProjectPath);
+        AnsiConsole.MarkupLine($"[bold]Project:[/] [green]{Markup.Escape(project.Name)}[/]");
         if (packages.Count == 0)
         {
-            AnsiConsole.MarkupLine("[yellow]–[/] no packages installed");
+            AnsiConsole.MarkupLine("[yellow]-[/] no packages installed");
             return 0;
         }
 
-        foreach (var p in packages)
+        foreach (var package in packages)
         {
-            AnsiConsole.MarkupLine($"  [blue]{Markup.Escape(p.Name)}[/] [grey]{Markup.Escape(p.Version)}[/]");
+            AnsiConsole.MarkupLine($"  [blue]{Markup.Escape(package.Name)}[/] [grey]{Markup.Escape(package.Version)}[/]");
         }
-
         return 0;
     }
 }

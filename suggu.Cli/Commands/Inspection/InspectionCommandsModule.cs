@@ -3,24 +3,23 @@ using suggu.Cli.Infrastructure;
 
 namespace suggu.Cli.Commands.Inspection;
 
-/// <summary>Registers the inspection verbs (find, later: info/check). Add commands here, not in Program.cs.</summary>
 internal static class InspectionCommandsModule
 {
     public static IConfigurator AddInspectionCommands(this IConfigurator config)
     {
-        config.AddCategorizedBranch("find", CommandCategories.Inspection, find =>
+        config.AddCategorizedBranch("check", CommandCategories.Dotnet, check =>
         {
-            find.SetDescription("Find things worth cleaning up.");
-            find.AddCommand<FindUselessCommand>("useless").WithDescription("Find empty folders (later: files).");
+            check.SetDescription("Inspect and diagnose a .NET solution");
+            check.AddCommand<CheckReferencesCommand>("references").WithDescription("Show the full project reference order");
+            check.AddCommand<CheckReferencesCommand>("ref").WithDescription("Alias for check references");
+            check.AddCommand<CheckBuildCommand>("build").WithDescription("Build and explain compiler/MSBuild diagnostics");
+            check.AddCommand<CheckFlowCommand>("flow").WithDescription("Trace an endpoint through connected source methods");
         });
 
-        config.AddCategorizedBranch("info", CommandCategories.Inspection, info =>
-        {
-            info.SetDescription("Inspect the solution.");
-            info.AddCommand<InfoReferencesCommand>("references")
-                .WithDescription("Show which project references which, as a tree.");
-        });
-
+        CommandCategories.Assign("check references", CommandCategories.Dotnet);
+        CommandCategories.Assign("check ref", CommandCategories.Dotnet);
+        CommandCategories.Assign("check build", CommandCategories.Dotnet);
+        CommandCategories.Assign("check flow", CommandCategories.Dotnet);
         return config;
     }
 }

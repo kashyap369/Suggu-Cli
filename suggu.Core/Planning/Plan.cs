@@ -3,7 +3,7 @@ namespace suggu.Core.Planning;
 /// <summary>
 /// An ordered list of intended operations produced by a command's planning stage.
 /// Building a plan never touches the disk; only <see cref="PlanExecutor"/> does.
-/// Plans compose: "setup" concatenates folder + seed plans, "new" concatenates layer plans.
+/// Plans compose by concatenating smaller operation lists into a larger workflow.
 /// </summary>
 public sealed record Plan(string Description, IReadOnlyList<Operation> Operations)
 {

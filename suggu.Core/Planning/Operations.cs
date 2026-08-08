@@ -64,6 +64,13 @@ public sealed record AddReferenceOperation(string ProjectPath, string Referenced
         $"{System.IO.Path.GetFileNameWithoutExtension(ProjectPath)} → {System.IO.Path.GetFileNameWithoutExtension(ReferencedProjectPath)}";
 }
 
+/// <summary>Remove a project-to-project reference through a structured csproj edit.</summary>
+public sealed record RemoveReferenceOperation(string ProjectPath, string ReferencedProjectPath) : Operation
+{
+    public override string TargetPath =>
+        $"{System.IO.Path.GetFileNameWithoutExtension(ProjectPath)} -/-> {System.IO.Path.GetFileNameWithoutExtension(ReferencedProjectPath)}";
+}
+
 /// <summary>
 /// Structured csproj edit: add a &lt;FrameworkReference&gt; (e.g. Microsoft.AspNetCore.App).
 /// Never regex over XML text — the executor edits the document model.

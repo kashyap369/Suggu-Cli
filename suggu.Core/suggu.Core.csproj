@@ -6,14 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Generation\" />
-    <Folder Include="Inspection\" />
-  </ItemGroup>
-
-  <!-- The default pack ships inside suggu.Core; the loader reads it by resource name. -->
-  <ItemGroup>
-    <EmbeddedResource Include="Packs\Default\**\*" />
-  </ItemGroup>
-
 </Project>

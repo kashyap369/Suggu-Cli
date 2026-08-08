@@ -79,4 +79,23 @@ public sealed class PlanExecutorTests : IDisposable
         Assert.Empty(second.Created);
         Assert.Equal(2, second.Skipped.Count());
     }
+
+    [Fact]
+    public void Removes_existing_project_reference_and_skips_when_repeated()
+    {
+        var source = P("Source.csproj");
+        var target = P("Target.csproj");
+        File.WriteAllText(target, "<Project />");
+        File.WriteAllText(source, """
+            <Project><ItemGroup><ProjectReference Include="Target.csproj" /></ItemGroup></Project>
+            """);
+        var plan = new Plan("remove ref", [new RemoveReferenceOperation(source, target)]);
+
+        var first = _executor.Execute(plan, ExecutionOptions.Default);
+        var second = _executor.Execute(plan, ExecutionOptions.Default);
+
+        Assert.Single(first.Deleted);
+        Assert.DoesNotContain("ProjectReference", File.ReadAllText(source));
+        Assert.Single(second.Skipped);
+    }
 }

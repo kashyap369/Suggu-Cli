@@ -40,6 +40,18 @@ public sealed class ProjectPlannerTests
     }
 
     [Fact]
+    public void Console_uses_console_template_and_ignores_controllers_flag()
+    {
+        var plan = ProjectPlanner.BuildPlan(Solution, "Shop.Worker", ProjectType.Console, framework: "10", useControllers: true);
+
+        var project = Assert.IsType<CreateProjectOperation>(plan.Operations[0]);
+        Assert.Equal("console", project.Template);
+        Assert.Equal("net10.0", project.Framework);
+        Assert.Null(project.ExtraArguments);
+        Assert.IsType<AddProjectToSolutionOperation>(plan.Operations[1]);
+    }
+
+    [Fact]
     public void Without_solution_no_sln_add_is_planned()
     {
         var plan = ProjectPlanner.BuildPlan(null, "Standalone", ProjectType.Api, parentDirectory: Path.Combine("D:", "tmp"));
@@ -104,5 +116,15 @@ public sealed class DotnetEnvironmentTests
     {
         var info = new DotnetInfo(true, ["8.0.404", "10.0.100"], [8, 10]);
         Assert.Equal(expected, DotnetEnvironment.Support(info, requested));
+    }
+
+    [Fact]
+    public void Template_framework_choices_are_parsed_and_sorted()
+    {
+        var output = "--framework <net9.0|net10.0>  net9.0 Target net9.0  net10.0 Target net10.0";
+
+        var frameworks = DotnetEnvironment.ParseTemplateFrameworks(output);
+
+        Assert.Equal(["net10.0", "net9.0"], frameworks);
     }
 }

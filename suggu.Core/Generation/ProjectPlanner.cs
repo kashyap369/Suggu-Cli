@@ -7,10 +7,11 @@ public enum ProjectType
 {
     Api,
     Mvc,
+    Console,
 }
 
 /// <summary>
-/// Plans "create project": a Web API or MVC project via dotnet new, added to the
+/// Plans "create project": a Web API, MVC, or console project via dotnet new, added to the
 /// solution when one exists. Same basic project VS creates, minus the GUI.
 /// </summary>
 public static class ProjectPlanner
@@ -30,12 +31,7 @@ public static class ProjectPlanner
         var outputDirectory = Path.Combine(root, name);
         var projectPath = Path.Combine(outputDirectory, $"{name}.csproj");
 
-        var template = type switch
-        {
-            ProjectType.Api => "webapi",
-            ProjectType.Mvc => "mvc",
-            _ => throw new ArgumentOutOfRangeException(nameof(type)),
-        };
+        var template = TemplateFor(type);
 
         // "webapi" scaffolds minimal APIs by default; --use-controllers gives the classic shape.
         IReadOnlyList<string>? extraArgs = type == ProjectType.Api && useControllers
@@ -63,6 +59,14 @@ public static class ProjectPlanner
 
         return new Plan($"create project {name} ({template})", operations);
     }
+
+    public static string TemplateFor(ProjectType type) => type switch
+    {
+        ProjectType.Api => "webapi",
+        ProjectType.Mvc => "mvc",
+        ProjectType.Console => "console",
+        _ => throw new ArgumentOutOfRangeException(nameof(type)),
+    };
 
     /// <summary>A solution to create as part of the plan when none exists yet.</summary>
     public sealed record NewSolution(string Directory, string Name);

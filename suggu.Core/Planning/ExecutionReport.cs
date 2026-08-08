@@ -6,6 +6,7 @@ public enum OperationStatus
     Created,
     Skipped,
     Overwritten,
+    Deleted,
     Failed,
 }
 
@@ -24,6 +25,7 @@ public sealed record ExecutionReport(
     public IEnumerable<OperationResult> Created => Results.Where(r => r.Status == OperationStatus.Created);
     public IEnumerable<OperationResult> Skipped => Results.Where(r => r.Status == OperationStatus.Skipped);
     public IEnumerable<OperationResult> Overwritten => Results.Where(r => r.Status == OperationStatus.Overwritten);
+    public IEnumerable<OperationResult> Deleted => Results.Where(r => r.Status == OperationStatus.Deleted);
     public IEnumerable<OperationResult> Failed => Results.Where(r => r.Status == OperationStatus.Failed);
 
     public bool Success => !Failed.Any();

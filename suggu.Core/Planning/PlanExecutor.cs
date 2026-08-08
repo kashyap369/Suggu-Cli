@@ -47,6 +47,7 @@ public sealed class PlanExecutor
                 CreateSolutionOperation solution => ApplyCreateSolution(solution, options),
                 AddProjectToSolutionOperation solutionAdd => ApplyAddProjectToSolution(solutionAdd, options),
                 AddReferenceOperation reference => ApplyAddReference(reference, options),
+                RemoveReferenceOperation reference => ApplyRemoveReference(reference, options),
                 AddFrameworkReferenceOperation frameworkRef => ApplyAddFrameworkReference(frameworkRef, options),
                 _ => new OperationResult(operation, OperationStatus.Failed, $"unknown operation type {operation.GetType().Name}"),
             };
@@ -258,5 +259,36 @@ public sealed class PlanExecutor
         }
 
         return new OperationResult(op, OperationStatus.Created);
+    }
+
+    private static OperationResult ApplyRemoveReference(RemoveReferenceOperation op, ExecutionOptions options)
+    {
+        if (!File.Exists(op.ProjectPath))
+        {
+            return new OperationResult(op, OperationStatus.Failed, $"project not found: {op.ProjectPath}");
+        }
+
+        var document = System.Xml.Linq.XDocument.Load(op.ProjectPath);
+        var referencedFileName = Path.GetFileName(op.ReferencedProjectPath);
+        var references = document.Descendants("ProjectReference")
+            .Where(element =>
+            {
+                var include = (string?)element.Attribute("Include");
+                return include is not null &&
+                    Path.GetFileName(include.Replace('\\', '/')).Equals(referencedFileName, StringComparison.OrdinalIgnoreCase);
+            })
+            .ToList();
+        if (references.Count == 0)
+        {
+            return new OperationResult(op, OperationStatus.Skipped, "reference not present");
+        }
+
+        if (!options.DryRun)
+        {
+            foreach (var reference in references) reference.Remove();
+            document.Save(op.ProjectPath);
+        }
+
+        return new OperationResult(op, OperationStatus.Deleted);
     }
 }

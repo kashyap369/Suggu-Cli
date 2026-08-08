@@ -1,5 +1,4 @@
 using Spectre.Console.Cli;
-using suggu.Cli.Commands.CleanArchitecture;
 using suggu.Cli.Commands.Common;
 using suggu.Cli.Commands.Inspection;
 
@@ -13,7 +12,6 @@ internal static class CommandRegistration
 {
     public static IConfigurator RegisterCommands(this IConfigurator config)
     {
-        config.AddCleanArchitectureCommands();
         config.AddCommonCommands();
         config.AddInspectionCommands();
         return config;

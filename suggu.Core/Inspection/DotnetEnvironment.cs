@@ -1,4 +1,5 @@
 using suggu.Core.Planning;
+using System.Text.RegularExpressions;
 
 namespace suggu.Core.Inspection;
 
@@ -62,6 +63,30 @@ public static class DotnetEnvironment
             ? FrameworkSupport.ViaNewerSdk
             : FrameworkSupport.NotSupported;
     }
+
+    /// <summary>Framework choices exposed by the active SDK's installed project template.</summary>
+    public static IReadOnlyList<string> TemplateFrameworks(string template)
+    {
+        try
+        {
+            var result = ProcessRunner.Run("dotnet", ["new", template, "--help"]);
+            return result.Success ? ParseTemplateFrameworks(result.Output) : [];
+        }
+        catch (Exception)
+        {
+            return [];
+        }
+    }
+
+    public static IReadOnlyList<string> ParseTemplateFrameworks(string output) =>
+        Regex.Matches(output, @"\bnet\d+\.\d+\b", RegexOptions.IgnoreCase | RegexOptions.CultureInvariant)
+            .Select(match => match.Value.ToLowerInvariant())
+            .Distinct(StringComparer.OrdinalIgnoreCase)
+            .OrderByDescending(framework => FrameworkMajor(framework))
+            .ToList();
+
+    private static int FrameworkMajor(string framework) =>
+        int.TryParse(framework.AsSpan(3, framework.IndexOf('.') - 3), out var major) ? major : -1;
 
     /// <summary>Each line looks like "10.0.100 [C:\Program Files\dotnet\sdk]" — keep the version part.</summary>
     public static IReadOnlyList<string> ParseSdkList(string output) =>

@@ -32,11 +32,14 @@ internal static class ProcessRunner
         using var process = Process.Start(startInfo)
             ?? throw new InvalidOperationException($"failed to start {fileName}");
 
-        var stdout = process.StandardOutput.ReadToEnd();
-        var stderr = process.StandardError.ReadToEnd();
+        // Read both redirected streams concurrently so a verbose build cannot block
+        // because one OS pipe fills while the other is being drained.
+        var stdoutTask = process.StandardOutput.ReadToEndAsync();
+        var stderrTask = process.StandardError.ReadToEndAsync();
         process.WaitForExit();
+        Task.WaitAll(stdoutTask, stderrTask);
 
-        var output = string.Join('\n', new[] { stdout, stderr }.Where(s => !string.IsNullOrWhiteSpace(s)));
+        var output = string.Join('\n', new[] { stdoutTask.Result, stderrTask.Result }.Where(s => !string.IsNullOrWhiteSpace(s)));
         return new ProcessResult(process.ExitCode, output.Trim());
     }
 }

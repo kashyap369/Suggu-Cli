@@ -1,43 +1,41 @@
-﻿using Spectre.Console;
-using Spectre.Console.Cli;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Text;
+using Spectre.Console;
+using Spectre.Console.Cli;
 
-namespace suggu.Cli.Commands.Common
+namespace suggu.Cli.Commands.Common;
+
+internal sealed class CreateFolderCommand : Command<CreateFolderCommand.Settings>
 {
-    internal sealed class CreateFolderCommand : Command<CreateFolderCommand.Settings>
+    public sealed class Settings : CommandSettings
     {
+        [CommandArgument(0, "<names>")]
+        [Description("One or more folder names, including nested paths.")]
+        public string[] Names { get; init; } = [];
 
-        public sealed class Settings : CommandSettings
-        {
-            [CommandArgument(0, "<names>")]
-            [Description("one or more folder names")]
-            public string[] Names { get; init; } = [];
-            [CommandOption("-p|--path <PATH>")]
-            [Description("where to create them default to current directory")]
-            public string? Path { get; init; }
-        }
+        [CommandOption("-p|--path <PATH>")]
+        [Description("Parent directory. Defaults to the current directory.")]
+        public string? Path { get; init; }
 
-        protected override int Execute(CommandContext context, Settings settings, CancellationToken cancellationToken)
+    }
+
+    protected override int Execute(CommandContext context, Settings settings, CancellationToken cancellationToken)
+    {
+        var basePath = Path.GetFullPath(settings.Path ?? Directory.GetCurrentDirectory());
+        foreach (var name in settings.Names)
         {
-            var basePath = settings.Path ?? Directory.GetCurrentDirectory();
-            foreach (var name in settings.Names)
+            var fullPath = Path.GetFullPath(name, basePath);
+            var existed = Directory.Exists(fullPath);
+            Directory.CreateDirectory(fullPath);
+            var gitIgnore = Path.Combine(fullPath, ".gitignore");
+            if (!File.Exists(gitIgnore))
             {
-                var full = System.IO.Path.Combine(basePath, name);
-                if (Directory.Exists(full))
-                {
-                    AnsiConsole.MarkupLine($"[yellow]skipped[/] {name} (folder already exists)");
-                    continue;
-                }
-                Directory.CreateDirectory(full);
-                // check + word both green
-                AnsiConsole.MarkupLine($"[green]✓ created[/] {name}");
+                File.WriteAllText(gitIgnore, string.Empty);
             }
-            return 0;
+
+            AnsiConsole.MarkupLine(existed
+                ? $"[yellow]-[/] folder already exists; ensured {Markup.Escape(gitIgnore)}"
+                : $"[green]created[/] {Markup.Escape(fullPath)} with .gitignore");
         }
-
-
+        return 0;
     }
 }

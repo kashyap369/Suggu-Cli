@@ -12,9 +12,9 @@
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>suggu</ToolCommandName>
     <PackageId>suggu</PackageId>
-    <Version>0.2.2</Version>
+    <Version>0.4.0</Version>
     <Authors>Shubham</Authors>
-    <Description>Deterministic scaffolding and verification CLI for .NET clean-architecture projects. suggu owns the deterministic 90%; the AI fills the semantic 10%.</Description>
+    <Description>Global file-system and .NET productivity CLI for scaffolding, inspection, build diagnostics, and endpoint flow tracing.</Description>
     <PackageOutputPath>$(MSBuildThisFileDirectory)..\nupkg</PackageOutputPath>
   </PropertyGroup>
 
@@ -24,10 +24,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\suggu.Core\suggu.Core.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Infrastructure\" />
   </ItemGroup>
 
 </Project>

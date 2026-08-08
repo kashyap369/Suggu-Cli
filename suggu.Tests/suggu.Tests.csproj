@@ -19,15 +19,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Generation\" />
-    <Folder Include="Inspection\" />
-    <Folder Include="Fixtures\" />
-    <Folder Include="Planning\" />
-    <Folder Include="Packs\" />
-    <Folder Include="Workspace\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\suggu.Core\suggu.Core.csproj" />
   </ItemGroup>
 
